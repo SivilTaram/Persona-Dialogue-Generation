@@ -123,7 +123,7 @@ def setup_args():
         momentum=momentum,
         # rough enough
         validation_max_exs=-1,
-        validation_every_n_secs=900,
+        validation_every_n_secs=3600,
         validation_metric='ppl',
         validation_metric_mode='min',
         validation_patience=10,
