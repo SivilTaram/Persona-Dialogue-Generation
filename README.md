@@ -108,6 +108,12 @@ python train_receiver.py
 
 ### Training PSquare
 
+At first you should prepare the self-play datset using the following command:
+
+```python
+python tasks/convai2/build_data.py
+```
+
 Before training PSquare, you should have a trained transmitter and receiver. Specifying the model names in line 33-42 in `train_psquare.py`, you can run the following script to execute the self-play procedure.
 
 ```python
