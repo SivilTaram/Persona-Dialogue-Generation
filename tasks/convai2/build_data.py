@@ -46,11 +46,11 @@ def build_data(self_non_original, save_path):
 
 
 if __name__ == '__main__':
-    build_data("..\\..\\data\\ConvAI2\\train_both_original_no_cands.txt",
-               "..\\..\\data\\ConvAI2\\train_self_original_selfplay.txt")
-    build_data("..\\..\\data\\ConvAI2\\valid_both_original_no_cands.txt",
-               "..\\..\\data\\ConvAI2\\valid_self_original_selfplay.txt")
-    build_data("..\\..\\data\\ConvAI2\\train_both_revised_no_cands.txt",
-               "..\\..\\data\\ConvAI2\\train_self_revised_selfplay.txt")
-    build_data("..\\..\\data\\ConvAI2\\valid_both_revised_no_cands.txt",
-               "..\\..\\data\\ConvAI2\\valid_self_revised_selfplay.txt")
+    build_data("data\\ConvAI2\\train_both_original_no_cands.txt",
+               "data\\ConvAI2\\train_self_original_selfplay.txt")
+    build_data("data\\ConvAI2\\valid_both_original_no_cands.txt",
+               "data\\ConvAI2\\valid_self_original_selfplay.txt")
+    build_data("data\\ConvAI2\\train_both_revised_no_cands.txt",
+               "data\\ConvAI2\\train_self_revised_selfplay.txt")
+    build_data("data\\ConvAI2\\valid_both_revised_no_cands.txt",
+               "data\\ConvAI2\\valid_self_revised_selfplay.txt")
