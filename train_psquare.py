@@ -6,8 +6,6 @@ Double Dual Training
 """
 import os
 import random
-
-import numpy
 import torch
 
 from scripts.train_model_selfplay import setup_args as setup_args_dict, TrainLoop
@@ -22,7 +20,6 @@ IS_ORIGINAL = False
 def set_seed(seed=1):
     torch.manual_seed(seed)
     random.seed(seed)
-    numpy.random.seed(seed)
 
 
 def setup_args():
