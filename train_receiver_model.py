@@ -10,8 +10,6 @@ import math
 import os
 from agents.common.dict_helper import SpecialToken
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '0'
-
 # if is original, train model on original data; otherwise on revised data.
 IS_ORIGINAL = False
 

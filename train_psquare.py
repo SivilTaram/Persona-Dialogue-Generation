@@ -14,7 +14,7 @@ from scripts.train_model_selfplay import setup_args as setup_args_dict, TrainLoo
 
 # TODO: must at least two GPU as the receiver & transmitter cannot be run in the same GPU card
 #  within less than 24GB memory.
-os.environ['CUDA_VISIBLE_DEVICES'] = '2,3'
+os.environ['CUDA_VISIBLE_DEVICES'] = '0,1'
 
 IS_ORIGINAL = False
 

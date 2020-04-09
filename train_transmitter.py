@@ -13,8 +13,6 @@ import torch
 from agents.transmitter.transmitter import ARCH_CHOICE
 from parlai.scripts.train_model import setup_args as setup_dict_args, TrainLoop
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '1'
-
 # if is original, train model on original data; otherwise on revised data.
 IS_ORIGINAL = False
 
