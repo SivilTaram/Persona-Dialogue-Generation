@@ -1,0 +1,1194 @@
+python eval_f1.py
+[ Deprecated Warning: eval_model no longer uses `printargs` ]
+[ warning: overriding opt['model'] to agents.transmitter.transmitter:TransformerAgent (previously: agents.dsquare.dsquare:DSquareAgent )]
+[ warning: overriding opt['model_file'] to ..\pretrained_models\psqaure_revised.model (previously: ./tmp/dsquare )]
+[ warning: overriding opt['batchsize'] to 10 (previously: 6 )]
+[ Using CUDA ]
+[ Loading existing model params from ..\pretrained_models\psqaure_revised.model ]
+Dictionary: loading dictionary from ./tmp/dict/convai2_self_seq2seq_model_b.dict
+[ num words =  19673 ]
+100%|����������| 815973/815973 [00:01<00:00, 726583.39B/s]
+100%|����������| 458495/458495 [00:00<00:00, 513416.41B/s]
+ftfy or spacy is not installed using BERT BasicTokenizer instead of SpaCy & ftfy.
+Gpt2SeqModel(
+  (transformer_module): OpenAIGPTLMHeadModel(
+    (transformer): OpenAIGPTModel(
+      (tokens_embed): Embedding(40516, 768)
+      (positions_embed): Embedding(512, 768)
+      (drop): Dropout(p=0.1)
+      (h): ModuleList(
+        (0): Block(
+          (attn): Attention(
+            (c_attn): Conv1D()
+            (c_proj): Conv1D()
+            (attn_dropout): Dropout(p=0.1)
+            (resid_dropout): Dropout(p=0.1)
+          )
+          (ln_1): BertLayerNorm()
+          (mlp): MLP(
+            (c_fc): Conv1D()
+            (c_proj): Conv1D()
+            (dropout): Dropout(p=0.1)
+          )
+          (ln_2): BertLayerNorm()
+        )
+        (1): Block(
+          (attn): Attention(
+            (c_attn): Conv1D()
+            (c_proj): Conv1D()
+            (attn_dropout): Dropout(p=0.1)
+            (resid_dropout): Dropout(p=0.1)
+          )
+          (ln_1): BertLayerNorm()
+          (mlp): MLP(
+            (c_fc): Conv1D()
+            (c_proj): Conv1D()
+            (dropout): Dropout(p=0.1)
+          )
+          (ln_2): BertLayerNorm()
+        )
+        (2): Block(
+          (attn): Attention(
+            (c_attn): Conv1D()
+            (c_proj): Conv1D()
+            (attn_dropout): Dropout(p=0.1)
+            (resid_dropout): Dropout(p=0.1)
+          )
+          (ln_1): BertLayerNorm()
+          (mlp): MLP(
+            (c_fc): Conv1D()
+            (c_proj): Conv1D()
+            (dropout): Dropout(p=0.1)
+          )
+          (ln_2): BertLayerNorm()
+        )
+        (3): Block(
+          (attn): Attention(
+            (c_attn): Conv1D()
+            (c_proj): Conv1D()
+            (attn_dropout): Dropout(p=0.1)
+            (resid_dropout): Dropout(p=0.1)
+          )
+          (ln_1): BertLayerNorm()
+          (mlp): MLP(
+            (c_fc): Conv1D()
+            (c_proj): Conv1D()
+            (dropout): Dropout(p=0.1)
+          )
+          (ln_2): BertLayerNorm()
+        )
+        (4): Block(
+          (attn): Attention(
+            (c_attn): Conv1D()
+            (c_proj): Conv1D()
+            (attn_dropout): Dropout(p=0.1)
+            (resid_dropout): Dropout(p=0.1)
+          )
+          (ln_1): BertLayerNorm()
+          (mlp): MLP(
+            (c_fc): Conv1D()
+            (c_proj): Conv1D()
+            (dropout): Dropout(p=0.1)
+          )
+          (ln_2): BertLayerNorm()
+        )
+        (5): Block(
+          (attn): Attention(
+            (c_attn): Conv1D()
+            (c_proj): Conv1D()
+            (attn_dropout): Dropout(p=0.1)
+            (resid_dropout): Dropout(p=0.1)
+          )
+          (ln_1): BertLayerNorm()
+          (mlp): MLP(
+            (c_fc): Conv1D()
+            (c_proj): Conv1D()
+            (dropout): Dropout(p=0.1)
+          )
+          (ln_2): BertLayerNorm()
+        )
+        (6): Block(
+          (attn): Attention(
+            (c_attn): Conv1D()
+            (c_proj): Conv1D()
+            (attn_dropout): Dropout(p=0.1)
+            (resid_dropout): Dropout(p=0.1)
+          )
+          (ln_1): BertLayerNorm()
+          (mlp): MLP(
+            (c_fc): Conv1D()
+            (c_proj): Conv1D()
+            (dropout): Dropout(p=0.1)
+          )
+          (ln_2): BertLayerNorm()
+        )
+        (7): Block(
+          (attn): Attention(
+            (c_attn): Conv1D()
+            (c_proj): Conv1D()
+            (attn_dropout): Dropout(p=0.1)
+            (resid_dropout): Dropout(p=0.1)
+          )
+          (ln_1): BertLayerNorm()
+          (mlp): MLP(
+            (c_fc): Conv1D()
+            (c_proj): Conv1D()
+            (dropout): Dropout(p=0.1)
+          )
+          (ln_2): BertLayerNorm()
+        )
+        (8): Block(
+          (attn): Attention(
+            (c_attn): Conv1D()
+            (c_proj): Conv1D()
+            (attn_dropout): Dropout(p=0.1)
+            (resid_dropout): Dropout(p=0.1)
+          )
+          (ln_1): BertLayerNorm()
+          (mlp): MLP(
+            (c_fc): Conv1D()
+            (c_proj): Conv1D()
+            (dropout): Dropout(p=0.1)
+          )
+          (ln_2): BertLayerNorm()
+        )
+        (9): Block(
+          (attn): Attention(
+            (c_attn): Conv1D()
+            (c_proj): Conv1D()
+            (attn_dropout): Dropout(p=0.1)
+            (resid_dropout): Dropout(p=0.1)
+          )
+          (ln_1): BertLayerNorm()
+          (mlp): MLP(
+            (c_fc): Conv1D()
+            (c_proj): Conv1D()
+            (dropout): Dropout(p=0.1)
+          )
+          (ln_2): BertLayerNorm()
+        )
+        (10): Block(
+          (attn): Attention(
+            (c_attn): Conv1D()
+            (c_proj): Conv1D()
+            (attn_dropout): Dropout(p=0.1)
+            (resid_dropout): Dropout(p=0.1)
+          )
+          (ln_1): BertLayerNorm()
+          (mlp): MLP(
+            (c_fc): Conv1D()
+            (c_proj): Conv1D()
+            (dropout): Dropout(p=0.1)
+          )
+          (ln_2): BertLayerNorm()
+        )
+        (11): Block(
+          (attn): Attention(
+            (c_attn): Conv1D()
+            (c_proj): Conv1D()
+            (attn_dropout): Dropout(p=0.1)
+            (resid_dropout): Dropout(p=0.1)
+          )
+          (ln_1): BertLayerNorm()
+          (mlp): MLP(
+            (c_fc): Conv1D()
+            (c_proj): Conv1D()
+            (dropout): Dropout(p=0.1)
+          )
+          (ln_2): BertLayerNorm()
+        )
+      )
+    )
+    (lm_head): OpenAIGPTLMHead(
+      (decoder): Linear(in_features=768, out_features=40516, bias=False)
+    )
+  )
+  (dropout): Dropout(p=0.2)
+  (linear): Linear(in_features=768, out_features=2, bias=False)
+)
+Total Parameter Size:116565504
+The following parameters will be optimized WITH decay:
+transformer_module.transformer.tokens_embed.weight , transformer_module.transformer.positions_embed.weight , transformer_module.transformer.h.0.attn.c_attn.weight , transformer_module.transformer.h.0.attn.c_proj.weight , transformer_module.transformer.h.0.ln_1.weight , ...and 69 more
+The following parameters will be optimized WITHOUT decay:
+transformer_module.transformer.h.0.attn.c_attn.bias , transformer_module.transformer.h.0.attn.c_proj.bias , transformer_module.transformer.h.0.ln_1.bias , transformer_module.transformer.h.0.mlp.c_fc.bias , transformer_module.transformer.h.0.mlp.c_proj.bias , ...and 67 more
+The following parameters will be optimized NORMALLY:
+linear.weight
+WARNING: not loading optim state since optim class changed.
+[creating task(s): tasks.convai2transmitter.agents:SelfRevisedTeacher]
+[loading fbdialog data:src\data\ConvAI2\valid_self_revised.txt]
+The following parameters will be optimized WITH decay:
+transformer_module.transformer.tokens_embed.weight , transformer_module.transformer.positions_embed.weight , transformer_module.transformer.h.0.attn.c_attn.weight , transformer_module.transformer.h.0.attn.c_proj.weight , transformer_module.transformer.h.0.ln_1.weight , ...and 69 more
+The following parameters will be optimized WITHOUT decay:
+transformer_module.transformer.h.0.attn.c_attn.bias , transformer_module.transformer.h.0.attn.c_proj.bias , transformer_module.transformer.h.0.ln_1.bias , transformer_module.transformer.h.0.mlp.c_fc.bias , transformer_module.transformer.h.0.mlp.c_proj.bias , ...and 67 more
+The following parameters will be optimized NORMALLY:
+linear.weight
+The following parameters will be optimized WITH decay:
+transformer_module.transformer.tokens_embed.weight , transformer_module.transformer.positions_embed.weight , transformer_module.transformer.h.0.attn.c_attn.weight , transformer_module.transformer.h.0.attn.c_proj.weight , transformer_module.transformer.h.0.ln_1.weight , ...and 69 more
+The following parameters will be optimized WITHOUT decay:
+transformer_module.transformer.h.0.attn.c_attn.bias , transformer_module.transformer.h.0.attn.c_proj.bias , transformer_module.transformer.h.0.ln_1.bias , transformer_module.transformer.h.0.mlp.c_fc.bias , transformer_module.transformer.h.0.mlp.c_proj.bias , ...and 67 more
+The following parameters will be optimized NORMALLY:
+linear.weight
+The following parameters will be optimized WITH decay:
+transformer_module.transformer.tokens_embed.weight , transformer_module.transformer.positions_embed.weight , transformer_module.transformer.h.0.attn.c_attn.weight , transformer_module.transformer.h.0.attn.c_proj.weight , transformer_module.transformer.h.0.ln_1.weight , ...and 69 more
+The following parameters will be optimized WITHOUT decay:
+transformer_module.transformer.h.0.attn.c_attn.bias , transformer_module.transformer.h.0.attn.c_proj.bias , transformer_module.transformer.h.0.ln_1.bias , transformer_module.transformer.h.0.mlp.c_fc.bias , transformer_module.transformer.h.0.mlp.c_proj.bias , ...and 67 more
+The following parameters will be optimized NORMALLY:
+linear.weight
+The following parameters will be optimized WITH decay:
+transformer_module.transformer.tokens_embed.weight , transformer_module.transformer.positions_embed.weight , transformer_module.transformer.h.0.attn.c_attn.weight , transformer_module.transformer.h.0.attn.c_proj.weight , transformer_module.transformer.h.0.ln_1.weight , ...and 69 more
+The following parameters will be optimized WITHOUT decay:
+transformer_module.transformer.h.0.attn.c_attn.bias , transformer_module.transformer.h.0.attn.c_proj.bias , transformer_module.transformer.h.0.ln_1.bias , transformer_module.transformer.h.0.mlp.c_fc.bias , transformer_module.transformer.h.0.mlp.c_proj.bias , ...and 67 more
+The following parameters will be optimized NORMALLY:
+linear.weight
+The following parameters will be optimized WITH decay:
+transformer_module.transformer.tokens_embed.weight , transformer_module.transformer.positions_embed.weight , transformer_module.transformer.h.0.attn.c_attn.weight , transformer_module.transformer.h.0.attn.c_proj.weight , transformer_module.transformer.h.0.ln_1.weight , ...and 69 more
+The following parameters will be optimized WITHOUT decay:
+transformer_module.transformer.h.0.attn.c_attn.bias , transformer_module.transformer.h.0.attn.c_proj.bias , transformer_module.transformer.h.0.ln_1.bias , transformer_module.transformer.h.0.mlp.c_fc.bias , transformer_module.transformer.h.0.mlp.c_proj.bias , ...and 67 more
+The following parameters will be optimized NORMALLY:
+linear.weight
+The following parameters will be optimized WITH decay:
+transformer_module.transformer.tokens_embed.weight , transformer_module.transformer.positions_embed.weight , transformer_module.transformer.h.0.attn.c_attn.weight , transformer_module.transformer.h.0.attn.c_proj.weight , transformer_module.transformer.h.0.ln_1.weight , ...and 69 more
+The following parameters will be optimized WITHOUT decay:
+transformer_module.transformer.h.0.attn.c_attn.bias , transformer_module.transformer.h.0.attn.c_proj.bias , transformer_module.transformer.h.0.ln_1.bias , transformer_module.transformer.h.0.mlp.c_fc.bias , transformer_module.transformer.h.0.mlp.c_proj.bias , ...and 67 more
+The following parameters will be optimized NORMALLY:
+linear.weight
+The following parameters will be optimized WITH decay:
+transformer_module.transformer.tokens_embed.weight , transformer_module.transformer.positions_embed.weight , transformer_module.transformer.h.0.attn.c_attn.weight , transformer_module.transformer.h.0.attn.c_proj.weight , transformer_module.transformer.h.0.ln_1.weight , ...and 69 more
+The following parameters will be optimized WITHOUT decay:
+transformer_module.transformer.h.0.attn.c_attn.bias , transformer_module.transformer.h.0.attn.c_proj.bias , transformer_module.transformer.h.0.ln_1.bias , transformer_module.transformer.h.0.mlp.c_fc.bias , transformer_module.transformer.h.0.mlp.c_proj.bias , ...and 67 more
+The following parameters will be optimized NORMALLY:
+linear.weight
+The following parameters will be optimized WITH decay:
+transformer_module.transformer.tokens_embed.weight , transformer_module.transformer.positions_embed.weight , transformer_module.transformer.h.0.attn.c_attn.weight , transformer_module.transformer.h.0.attn.c_proj.weight , transformer_module.transformer.h.0.ln_1.weight , ...and 69 more
+The following parameters will be optimized WITHOUT decay:
+transformer_module.transformer.h.0.attn.c_attn.bias , transformer_module.transformer.h.0.attn.c_proj.bias , transformer_module.transformer.h.0.ln_1.bias , transformer_module.transformer.h.0.mlp.c_fc.bias , transformer_module.transformer.h.0.mlp.c_proj.bias , ...and 67 more
+The following parameters will be optimized NORMALLY:
+linear.weight
+The following parameters will be optimized WITH decay:
+transformer_module.transformer.tokens_embed.weight , transformer_module.transformer.positions_embed.weight , transformer_module.transformer.h.0.attn.c_attn.weight , transformer_module.transformer.h.0.attn.c_proj.weight , transformer_module.transformer.h.0.ln_1.weight , ...and 69 more
+The following parameters will be optimized WITHOUT decay:
+transformer_module.transformer.h.0.attn.c_attn.bias , transformer_module.transformer.h.0.attn.c_proj.bias , transformer_module.transformer.h.0.ln_1.bias , transformer_module.transformer.h.0.mlp.c_fc.bias , transformer_module.transformer.h.0.mlp.c_proj.bias , ...and 67 more
+The following parameters will be optimized NORMALLY:
+linear.weight
+The following parameters will be optimized WITH decay:
+transformer_module.transformer.tokens_embed.weight , transformer_module.transformer.positions_embed.weight , transformer_module.transformer.h.0.attn.c_attn.weight , transformer_module.transformer.h.0.attn.c_proj.weight , transformer_module.transformer.h.0.ln_1.weight , ...and 69 more
+The following parameters will be optimized WITHOUT decay:
+transformer_module.transformer.h.0.attn.c_attn.bias , transformer_module.transformer.h.0.attn.c_proj.bias , transformer_module.transformer.h.0.ln_1.bias , transformer_module.transformer.h.0.mlp.c_fc.bias , transformer_module.transformer.h.0.mlp.c_proj.bias , ...and 67 more
+The following parameters will be optimized NORMALLY:
+linear.weight
+[ optional arguments: ] 
+[  display_examples: False ]
+[  log_every_n_secs: 30 ]
+[  metrics: accuracy,loss,token_acc,hits@1,hits@5,hits@10,pscore,score,attn_std,lr,hits@50,std ]
+[  num_examples: -1 ]
+[ Main ParlAI Arguments: ] 
+[  batchsize: 10 ]
+[  datapath: data ]
+[  datatype: train ]
+[  download_path: downloads ]
+[  hide_labels: False ]
+[  image_mode: raw ]
+[  multitask_weights: [1] ]
+[  numthreads: 1 ]
+[  show_advanced_args: False ]
+[  task: tasks.convai2transmitter.agents:SelfRevisedTeacher ]
+[ ParlAI Model Arguments: ] 
+[  dict_class: agents.common.gpt_dictionary:GPTDictionaryAgent ]
+[  init_model: None ]
+[  model: agents.transmitter.transmitter:TransformerAgent ]
+[  model_file: ..\pretrained_models\psqaure_revised.model ]
+[ PytorchData Arguments: ] 
+[  batch_length_range: 5 ]
+[  batch_sort_cache_type: pop ]
+[  batch_sort_field: text ]
+[  numworkers: 4 ]
+[  pytorch_context_length: -1 ]
+[  pytorch_datapath: None ]
+[  pytorch_include_labels: True ]
+[  pytorch_preprocess: False ]
+[  pytorch_teacher_batch_sort: False ]
+[  pytorch_teacher_dataset: None ]
+[  pytorch_teacher_task: None ]
+[  shuffle: False ]
+[ Tensorboard Arguments: ] 
+[  tensorboard_comment:  ]
+[  tensorboard_log: True ]
+[  tensorboard_metrics: ppl,reward,total_reward,f1,hits@1,reward_var,bleu ]
+[  tensorboard_tag: exp ]
+[ ParlAI Image Preprocessing Arguments: ] 
+[  image_cropsize: 224 ]
+[  image_size: 256 ]
+[ Seq2Seq Arguments: ] 
+[  batchsize: 10 ]
+[  beam_size: 2 ]
+[  decode_max_seq_len: 32 ]
+[  dict_include_valid: True ]
+[  display_model: True ]
+[  embedding_type: glove ]
+[  encode_max_seq_len: 256 ]
+[  encoder_dis_use: False ]
+[  encoder_turn_dim: 50 ]
+[  encoder_turn_use: False ]
+[  gpu: 0 ]
+[  gradient_clip: 1.0 ]
+[  history_append_strategy: -1 ]
+[  history_replies: label_else_model ]
+[  lm_coef: 0.9 ]
+[  lookuptable: enc_dec ]
+[  lr: 1e-06 ]
+[  lr_schedule: warmup_linear ]
+[  momentum: 0.9 ]
+[  n_epoches: 100 ]
+[  no_cuda: False ]
+[  num_train_epochs: 4 ]
+[  optimizer: gpt_custom ]
+[  optimizer_step: 52329 ]
+[  persona_append_strategy: concat ]
+[  rank_candidates: True ]
+[  receiver_model: ./tmp/receiver/7.10_fix_glove_no_top_max_sep_sum_to_max_15000_40b73a26b67bfaf8dcfba0e16f9c283a.model  ]
+[  report_freq: 0.001 ]
+[  select_persona: False ]
+[  share_encoder_persona_dialogue: True ]
+[  shuffle_persona: True ]
+[  smoothing: 0.05 ]
+[  train_size: 130824 ]
+[  use_persona_token: True ]
+[  use_talk_token: True ]
+[  warmup_proportion: 0.002 ]
+[  weight_decay: 0.01 ]
+[ Dictionary Arguments: ] 
+[  bpe_debug: False ]
+[  dict_endtoken: __end__ ]
+[  dict_file: ./tmp/dict/convai2_self_seq2seq_model_b.dict ]
+[  dict_initpath: None ]
+[  dict_language: english ]
+[  dict_lower: True ]
+[  dict_max_ngram_size: -1 ]
+[  dict_maxtokens: -1 ]
+[  dict_minfreq: 0 ]
+[  dict_nulltoken: __null__ ]
+[  dict_starttoken: __start__ ]
+[  dict_textfields: text,labels ]
+[  dict_tokenizer: split ]
+[  dict_unktoken: __unk__ ]
+preinitializing pytorch cuda buffer
+7s elapsed: {'exs': 10, '%done': '0.13%', 'time_left': '5686s', 'f1': 0.1999, 'bleu': 0.02892}
+15s elapsed: {'exs': 20, '%done': '0.26%', 'time_left': '5847s', 'f1': 0.2513, 'bleu': 0.0311}
+24s elapsed: {'exs': 30, '%done': '0.38%', 'time_left': '6340s', 'f1': 0.2486, 'bleu': 0.02074}
+36s elapsed: {'exs': 40, '%done': '0.51%', 'time_left': '7117s', 'f1': 0.2283, 'bleu': 0.01556}
+48s elapsed: {'exs': 50, '%done': '0.64%', 'time_left': '7503s', 'f1': 0.2223, 'bleu': 0.01245}
+62s elapsed: {'exs': 60, '%done': '0.77%', 'time_left': '8121s', 'f1': 0.2135, 'bleu': 0.01038}
+80s elapsed: {'exs': 70, '%done': '0.90%', 'time_left': '8889s', 'f1': 0.2132, 'bleu': 0.008893}
+99s elapsed: {'exs': 80, '%done': '1.03%', 'time_left': '9587s', 'f1': 0.211, 'bleu': 0.007783}
+108s elapsed: {'exs': 90, '%done': '1.15%', 'time_left': '9308s', 'f1': 0.2098, 'bleu': 0.01045}
+118s elapsed: {'exs': 100, '%done': '1.28%', 'time_left': '9122s', 'f1': 0.2084, 'bleu': 0.01327}
+130s elapsed: {'exs': 110, '%done': '1.41%', 'time_left': '9140s', 'f1': 0.2123, 'bleu': 0.01478}
+143s elapsed: {'exs': 120, '%done': '1.54%', 'time_left': '9155s', 'f1': 0.2102, 'bleu': 0.01355}
+158s elapsed: {'exs': 130, '%done': '1.67%', 'time_left': '9327s', 'f1': 0.2065, 'bleu': 0.01251}
+177s elapsed: {'exs': 140, '%done': '1.79%', 'time_left': '9710s', 'f1': 0.2047, 'bleu': 0.01161}
+197s elapsed: {'exs': 150, '%done': '1.92%', 'time_left': '10053s', 'f1': 0.2108, 'bleu': 0.01084}
+216s elapsed: {'exs': 160, '%done': '2.05%', 'time_left': '10330s', 'f1': 0.2096, 'bleu': 0.01016}
+224s elapsed: {'exs': 170, '%done': '2.18%', 'time_left': '10065s', 'f1': 0.211, 'bleu': 0.01173}
+233s elapsed: {'exs': 180, '%done': '2.31%', 'time_left': '9878s', 'f1': 0.2076, 'bleu': 0.01108}
+244s elapsed: {'exs': 190, '%done': '2.44%', 'time_left': '9795s', 'f1': 0.2102, 'bleu': 0.01049}
+257s elapsed: {'exs': 200, '%done': '2.56%', 'time_left': '9768s', 'f1': 0.2082, 'bleu': 0.009969}
+272s elapsed: {'exs': 210, '%done': '2.69%', 'time_left': '9836s', 'f1': 0.2054, 'bleu': 0.01119}
+288s elapsed: {'exs': 220, '%done': '2.82%', 'time_left': '9955s', 'f1': 0.2025, 'bleu': 0.01068}
+305s elapsed: {'exs': 230, '%done': '2.95%', 'time_left': '10062s', 'f1': 0.2035, 'bleu': 0.01246}
+324s elapsed: {'exs': 240, '%done': '3.08%', 'time_left': '10223s', 'f1': 0.2028, 'bleu': 0.01338}
+333s elapsed: {'exs': 250, '%done': '3.20%', 'time_left': '10067s', 'f1': 0.2023, 'bleu': 0.01285}
+344s elapsed: {'exs': 260, '%done': '3.33%', 'time_left': '9981s', 'f1': 0.2019, 'bleu': 0.01236}
+356s elapsed: {'exs': 270, '%done': '3.46%', 'time_left': '9935s', 'f1': 0.2025, 'bleu': 0.0119}
+369s elapsed: {'exs': 280, '%done': '3.59%', 'time_left': '9936s', 'f1': 0.2011, 'bleu': 0.01148}
+383s elapsed: {'exs': 290, '%done': '3.72%', 'time_left': '9944s', 'f1': 0.2001, 'bleu': 0.01108}
+400s elapsed: {'exs': 300, '%done': '3.85%', 'time_left': '10003s', 'f1': 0.1982, 'bleu': 0.01071}
+418s elapsed: {'exs': 310, '%done': '3.97%', 'time_left': '10104s', 'f1': 0.2008, 'bleu': 0.01037}
+437s elapsed: {'exs': 320, '%done': '4.10%', 'time_left': '10219s', 'f1': 0.2003, 'bleu': 0.01004}
+448s elapsed: {'exs': 330, '%done': '4.23%', 'time_left': '10155s', 'f1': 0.2007, 'bleu': 0.00974}
+461s elapsed: {'exs': 340, '%done': '4.36%', 'time_left': '10126s', 'f1': 0.1974, 'bleu': 0.009454}
+476s elapsed: {'exs': 350, '%done': '4.49%', 'time_left': '10133s', 'f1': 0.1979, 'bleu': 0.009184}
+492s elapsed: {'exs': 360, '%done': '4.61%', 'time_left': '10172s', 'f1': 0.1977, 'bleu': 0.008929}
+508s elapsed: {'exs': 370, '%done': '4.74%', 'time_left': '10216s', 'f1': 0.198, 'bleu': 0.008689}
+526s elapsed: {'exs': 380, '%done': '4.87%', 'time_left': '10274s', 'f1': 0.1959, 'bleu': 0.00846}
+543s elapsed: {'exs': 390, '%done': '5.00%', 'time_left': '10327s', 'f1': 0.1981, 'bleu': 0.00974}
+559s elapsed: {'exs': 400, '%done': '5.13%', 'time_left': '10354s', 'f1': 0.1986, 'bleu': 0.01012}
+571s elapsed: {'exs': 410, '%done': '5.26%', 'time_left': '10293s', 'f1': 0.1982, 'bleu': 0.009871}
+583s elapsed: {'exs': 420, '%done': '5.38%', 'time_left': '10260s', 'f1': 0.1968, 'bleu': 0.009636}
+597s elapsed: {'exs': 430, '%done': '5.51%', 'time_left': '10250s', 'f1': 0.1979, 'bleu': 0.009412}
+615s elapsed: {'exs': 440, '%done': '5.64%', 'time_left': '10296s', 'f1': 0.1971, 'bleu': 0.009941}
+633s elapsed: {'exs': 450, '%done': '5.77%', 'time_left': '10341s', 'f1': 0.1959, 'bleu': 0.00972}
+650s elapsed: {'exs': 460, '%done': '5.90%', 'time_left': '10374s', 'f1': 0.1964, 'bleu': 0.009509}
+667s elapsed: {'exs': 470, '%done': '6.02%', 'time_left': '10413s', 'f1': 0.1955, 'bleu': 0.009307}
+683s elapsed: {'exs': 480, '%done': '6.15%', 'time_left': '10422s', 'f1': 0.1954, 'bleu': 0.009735}
+694s elapsed: {'exs': 490, '%done': '6.28%', 'time_left': '10361s', 'f1': 0.1955, 'bleu': 0.01042}
+706s elapsed: {'exs': 500, '%done': '6.41%', 'time_left': '10316s', 'f1': 0.1937, 'bleu': 0.01022}
+721s elapsed: {'exs': 510, '%done': '6.54%', 'time_left': '10307s', 'f1': 0.1934, 'bleu': 0.01002}
+738s elapsed: {'exs': 520, '%done': '6.67%', 'time_left': '10333s', 'f1': 0.1932, 'bleu': 0.009823}
+755s elapsed: {'exs': 530, '%done': '6.79%', 'time_left': '10366s', 'f1': 0.1932, 'bleu': 0.01052}
+772s elapsed: {'exs': 540, '%done': '6.92%', 'time_left': '10390s', 'f1': 0.1935, 'bleu': 0.01032}
+792s elapsed: {'exs': 550, '%done': '7.05%', 'time_left': '10446s', 'f1': 0.1942, 'bleu': 0.01195}
+801s elapsed: {'exs': 560, '%done': '7.18%', 'time_left': '10358s', 'f1': 0.1968, 'bleu': 0.01174}
+812s elapsed: {'exs': 570, '%done': '7.31%', 'time_left': '10313s', 'f1': 0.1967, 'bleu': 0.01154}
+825s elapsed: {'exs': 580, '%done': '7.43%', 'time_left': '10280s', 'f1': 0.1958, 'bleu': 0.01134}
+839s elapsed: {'exs': 590, '%done': '7.56%', 'time_left': '10263s', 'f1': 0.1948, 'bleu': 0.01157}
+854s elapsed: {'exs': 600, '%done': '7.69%', 'time_left': '10250s', 'f1': 0.1935, 'bleu': 0.01138}
+870s elapsed: {'exs': 610, '%done': '7.82%', 'time_left': '10259s', 'f1': 0.1937, 'bleu': 0.01119}
+888s elapsed: {'exs': 620, '%done': '7.95%', 'time_left': '10291s', 'f1': 0.194, 'bleu': 0.01101}
+906s elapsed: {'exs': 630, '%done': '8.08%', 'time_left': '10313s', 'f1': 0.1958, 'bleu': 0.01116}
+917s elapsed: {'exs': 640, '%done': '8.20%', 'time_left': '10261s', 'f1': 0.1954, 'bleu': 0.01099}
+930s elapsed: {'exs': 650, '%done': '8.33%', 'time_left': '10233s', 'f1': 0.1952, 'bleu': 0.01082}
+944s elapsed: {'exs': 660, '%done': '8.46%', 'time_left': '10220s', 'f1': 0.1958, 'bleu': 0.01066}
+961s elapsed: {'exs': 670, '%done': '8.59%', 'time_left': '10229s', 'f1': 0.1957, 'bleu': 0.01083}
+979s elapsed: {'exs': 680, '%done': '8.72%', 'time_left': '10253s', 'f1': 0.195, 'bleu': 0.01068}
+994s elapsed: {'exs': 690, '%done': '8.85%', 'time_left': '10247s', 'f1': 0.1943, 'bleu': 0.01052}
+1013s elapsed: {'exs': 700, '%done': '8.97%', 'time_left': '10282s', 'f1': 0.1948, 'bleu': 0.01037}
+1032s elapsed: {'exs': 710, '%done': '9.10%', 'time_left': '10310s', 'f1': 0.1951, 'bleu': 0.01023}
+1044s elapsed: {'exs': 720, '%done': '9.23%', 'time_left': '10268s', 'f1': 0.1955, 'bleu': 0.01051}
+1055s elapsed: {'exs': 730, '%done': '9.36%', 'time_left': '10226s', 'f1': 0.1952, 'bleu': 0.01069}
+1067s elapsed: {'exs': 740, '%done': '9.49%', 'time_left': '10187s', 'f1': 0.1948, 'bleu': 0.01054}
+1082s elapsed: {'exs': 750, '%done': '9.61%', 'time_left': '10177s', 'f1': 0.1939, 'bleu': 0.0104}
+1098s elapsed: {'exs': 760, '%done': '9.74%', 'time_left': '10177s', 'f1': 0.1939, 'bleu': 0.01027}
+1117s elapsed: {'exs': 770, '%done': '9.87%', 'time_left': '10199s', 'f1': 0.1942, 'bleu': 0.01028}
+1134s elapsed: {'exs': 780, '%done': '10.00%', 'time_left': '10211s', 'f1': 0.1939, 'bleu': 0.01015}
+1152s elapsed: {'exs': 790, '%done': '10.13%', 'time_left': '10230s', 'f1': 0.1941, 'bleu': 0.01032}
+1163s elapsed: {'exs': 800, '%done': '10.26%', 'time_left': '10178s', 'f1': 0.1942, 'bleu': 0.01083}
+1175s elapsed: {'exs': 810, '%done': '10.38%', 'time_left': '10144s', 'f1': 0.1933, 'bleu': 0.0107}
+1189s elapsed: {'exs': 820, '%done': '10.51%', 'time_left': '10128s', 'f1': 0.1931, 'bleu': 0.01057}
+1204s elapsed: {'exs': 830, '%done': '10.64%', 'time_left': '10117s', 'f1': 0.1936, 'bleu': 0.01044}
+1218s elapsed: {'exs': 840, '%done': '10.77%', 'time_left': '10100s', 'f1': 0.1934, 'bleu': 0.01032}
+1235s elapsed: {'exs': 850, '%done': '10.90%', 'time_left': '10104s', 'f1': 0.1938, 'bleu': 0.0102}
+1253s elapsed: {'exs': 860, '%done': '11.02%', 'time_left': '10120s', 'f1': 0.1942, 'bleu': 0.01083}
+1270s elapsed: {'exs': 870, '%done': '11.15%', 'time_left': '10124s', 'f1': 0.1942, 'bleu': 0.0107}
+1281s elapsed: {'exs': 880, '%done': '11.28%', 'time_left': '10081s', 'f1': 0.1943, 'bleu': 0.01058}
+1294s elapsed: {'exs': 890, '%done': '11.41%', 'time_left': '10049s', 'f1': 0.1941, 'bleu': 0.01046}
+1307s elapsed: {'exs': 900, '%done': '11.54%', 'time_left': '10028s', 'f1': 0.1935, 'bleu': 0.01035}
+1323s elapsed: {'exs': 910, '%done': '11.67%', 'time_left': '10024s', 'f1': 0.1933, 'bleu': 0.01023}
+1341s elapsed: {'exs': 920, '%done': '11.79%', 'time_left': '10033s', 'f1': 0.1934, 'bleu': 0.01012}
+1357s elapsed: {'exs': 930, '%done': '11.92%', 'time_left': '10031s', 'f1': 0.1932, 'bleu': 0.01001}
+1374s elapsed: {'exs': 940, '%done': '12.05%', 'time_left': '10033s', 'f1': 0.1933, 'bleu': 0.009906}
+1394s elapsed: {'exs': 950, '%done': '12.18%', 'time_left': '10053s', 'f1': 0.1935, 'bleu': 0.01003}
+1405s elapsed: {'exs': 960, '%done': '12.31%', 'time_left': '10019s', 'f1': 0.1928, 'bleu': 0.009923}
+1419s elapsed: {'exs': 970, '%done': '12.43%', 'time_left': '9997s', 'f1': 0.1929, 'bleu': 0.009821}
+1434s elapsed: {'exs': 980, '%done': '12.56%', 'time_left': '9982s', 'f1': 0.193, 'bleu': 0.009721}
+1450s elapsed: {'exs': 990, '%done': '12.69%', 'time_left': '9982s', 'f1': 0.1925, 'bleu': 0.009622}
+1468s elapsed: {'exs': 1000, '%done': '12.82%', 'time_left': '9987s', 'f1': 0.193, 'bleu': 0.0101}
+1485s elapsed: {'exs': 1010, '%done': '12.95%', 'time_left': '9991s', 'f1': 0.1933, 'bleu': 0.01}
+1500s elapsed: {'exs': 1020, '%done': '13.08%', 'time_left': '9976s', 'f1': 0.1937, 'bleu': 0.0104}
+1518s elapsed: {'exs': 1030, '%done': '13.20%', 'time_left': '9983s', 'f1': 0.1934, 'bleu': 0.0103}
+1534s elapsed: {'exs': 1040, '%done': '13.33%', 'time_left': '9972s', 'f1': 0.1937, 'bleu': 0.0102}
+1549s elapsed: {'exs': 1050, '%done': '13.46%', 'time_left': '9964s', 'f1': 0.1934, 'bleu': 0.01011}
+1565s elapsed: {'exs': 1060, '%done': '13.59%', 'time_left': '9958s', 'f1': 0.1932, 'bleu': 0.01073}
+1582s elapsed: {'exs': 1070, '%done': '13.72%', 'time_left': '9957s', 'f1': 0.1931, 'bleu': 0.01063}
+1598s elapsed: {'exs': 1080, '%done': '13.84%', 'time_left': '9947s', 'f1': 0.193, 'bleu': 0.01053}
+1615s elapsed: {'exs': 1090, '%done': '13.97%', 'time_left': '9947s', 'f1': 0.1927, 'bleu': 0.01062}
+1634s elapsed: {'exs': 1100, '%done': '14.10%', 'time_left': '9954s', 'f1': 0.1924, 'bleu': 0.01052}
+1647s elapsed: {'exs': 1110, '%done': '14.23%', 'time_left': '9931s', 'f1': 0.1924, 'bleu': 0.01043}
+1663s elapsed: {'exs': 1120, '%done': '14.36%', 'time_left': '9922s', 'f1': 0.1921, 'bleu': 0.01033}
+1683s elapsed: {'exs': 1130, '%done': '14.49%', 'time_left': '9936s', 'f1': 0.1923, 'bleu': 0.01024}
+1701s elapsed: {'exs': 1140, '%done': '14.61%', 'time_left': '9943s', 'f1': 0.192, 'bleu': 0.01015}
+1720s elapsed: {'exs': 1150, '%done': '14.74%', 'time_left': '9948s', 'f1': 0.1925, 'bleu': 0.01031}
+1737s elapsed: {'exs': 1160, '%done': '14.87%', 'time_left': '9947s', 'f1': 0.1921, 'bleu': 0.01022}
+1755s elapsed: {'exs': 1170, '%done': '15.00%', 'time_left': '9949s', 'f1': 0.192, 'bleu': 0.01014}
+1773s elapsed: {'exs': 1180, '%done': '15.13%', 'time_left': '9953s', 'f1': 0.192, 'bleu': 0.01005}
+1786s elapsed: {'exs': 1190, '%done': '15.25%', 'time_left': '9924s', 'f1': 0.192, 'bleu': 0.009967}
+1800s elapsed: {'exs': 1200, '%done': '15.38%', 'time_left': '9902s', 'f1': 0.192, 'bleu': 0.01013}
+1814s elapsed: {'exs': 1210, '%done': '15.51%', 'time_left': '9883s', 'f1': 0.1923, 'bleu': 0.01053}
+1830s elapsed: {'exs': 1220, '%done': '15.64%', 'time_left': '9874s', 'f1': 0.1922, 'bleu': 0.01045}
+1846s elapsed: {'exs': 1230, '%done': '15.77%', 'time_left': '9865s', 'f1': 0.1927, 'bleu': 0.0108}
+1863s elapsed: {'exs': 1240, '%done': '15.90%', 'time_left': '9858s', 'f1': 0.1931, 'bleu': 0.01072}
+1880s elapsed: {'exs': 1250, '%done': '16.02%', 'time_left': '9852s', 'f1': 0.1935, 'bleu': 0.01091}
+1893s elapsed: {'exs': 1260, '%done': '16.15%', 'time_left': '9829s', 'f1': 0.1935, 'bleu': 0.01093}
+1908s elapsed: {'exs': 1270, '%done': '16.28%', 'time_left': '9812s', 'f1': 0.1937, 'bleu': 0.011}
+1922s elapsed: {'exs': 1280, '%done': '16.41%', 'time_left': '9795s', 'f1': 0.1937, 'bleu': 0.01091}
+1939s elapsed: {'exs': 1290, '%done': '16.54%', 'time_left': '9790s', 'f1': 0.1938, 'bleu': 0.01099}
+1956s elapsed: {'exs': 1300, '%done': '16.66%', 'time_left': '9783s', 'f1': 0.1936, 'bleu': 0.0109}
+1973s elapsed: {'exs': 1310, '%done': '16.79%', 'time_left': '9780s', 'f1': 0.1934, 'bleu': 0.01082}
+1988s elapsed: {'exs': 1320, '%done': '16.92%', 'time_left': '9762s', 'f1': 0.1937, 'bleu': 0.01074}
+2005s elapsed: {'exs': 1330, '%done': '17.05%', 'time_left': '9756s', 'f1': 0.1932, 'bleu': 0.01066}
+2023s elapsed: {'exs': 1340, '%done': '17.18%', 'time_left': '9757s', 'f1': 0.1931, 'bleu': 0.01058}
+2038s elapsed: {'exs': 1350, '%done': '17.31%', 'time_left': '9738s', 'f1': 0.1926, 'bleu': 0.0105}
+2055s elapsed: {'exs': 1360, '%done': '17.43%', 'time_left': '9733s', 'f1': 0.1923, 'bleu': 0.01042}
+2075s elapsed: {'exs': 1370, '%done': '17.56%', 'time_left': '9741s', 'f1': 0.1921, 'bleu': 0.01035}
+2091s elapsed: {'exs': 1380, '%done': '17.69%', 'time_left': '9732s', 'f1': 0.1924, 'bleu': 0.01027}
+2108s elapsed: {'exs': 1390, '%done': '17.82%', 'time_left': '9724s', 'f1': 0.1922, 'bleu': 0.0102}
+2126s elapsed: {'exs': 1400, '%done': '17.95%', 'time_left': '9724s', 'f1': 0.1932, 'bleu': 0.01031}
+2142s elapsed: {'exs': 1410, '%done': '18.07%', 'time_left': '9711s', 'f1': 0.1939, 'bleu': 0.01024}
+2154s elapsed: {'exs': 1420, '%done': '18.20%', 'time_left': '9680s', 'f1': 0.1941, 'bleu': 0.01027}
+2168s elapsed: {'exs': 1430, '%done': '18.33%', 'time_left': '9659s', 'f1': 0.1941, 'bleu': 0.01032}
+2183s elapsed: {'exs': 1440, '%done': '18.46%', 'time_left': '9647s', 'f1': 0.1938, 'bleu': 0.01025}
+2201s elapsed: {'exs': 1450, '%done': '18.59%', 'time_left': '9644s', 'f1': 0.1933, 'bleu': 0.01018}
+2221s elapsed: {'exs': 1460, '%done': '18.72%', 'time_left': '9646s', 'f1': 0.1934, 'bleu': 0.01036}
+2238s elapsed: {'exs': 1470, '%done': '18.84%', 'time_left': '9640s', 'f1': 0.1933, 'bleu': 0.01029}
+2255s elapsed: {'exs': 1480, '%done': '18.97%', 'time_left': '9633s', 'f1': 0.1936, 'bleu': 0.01022}
+2269s elapsed: {'exs': 1490, '%done': '19.10%', 'time_left': '9612s', 'f1': 0.194, 'bleu': 0.01015}
+2281s elapsed: {'exs': 1500, '%done': '19.23%', 'time_left': '9582s', 'f1': 0.1937, 'bleu': 0.01008}
+2295s elapsed: {'exs': 1510, '%done': '19.36%', 'time_left': '9563s', 'f1': 0.1944, 'bleu': 0.01002}
+2311s elapsed: {'exs': 1520, '%done': '19.48%', 'time_left': '9552s', 'f1': 0.1943, 'bleu': 0.009953}
+2329s elapsed: {'exs': 1530, '%done': '19.61%', 'time_left': '9547s', 'f1': 0.1943, 'bleu': 0.01008}
+2346s elapsed: {'exs': 1540, '%done': '19.74%', 'time_left': '9541s', 'f1': 0.1939, 'bleu': 0.01002}
+2363s elapsed: {'exs': 1550, '%done': '19.87%', 'time_left': '9532s', 'f1': 0.1937, 'bleu': 0.009953}
+2383s elapsed: {'exs': 1560, '%done': '20.00%', 'time_left': '9533s', 'f1': 0.1935, 'bleu': 0.009889}
+2399s elapsed: {'exs': 1570, '%done': '20.13%', 'time_left': '9521s', 'f1': 0.1936, 'bleu': 0.009826}
+2411s elapsed: {'exs': 1580, '%done': '20.25%', 'time_left': '9495s', 'f1': 0.1932, 'bleu': 0.009764}
+2426s elapsed: {'exs': 1590, '%done': '20.38%', 'time_left': '9478s', 'f1': 0.1932, 'bleu': 0.009702}
+2444s elapsed: {'exs': 1600, '%done': '20.51%', 'time_left': '9474s', 'f1': 0.1929, 'bleu': 0.009642}
+2462s elapsed: {'exs': 1610, '%done': '20.64%', 'time_left': '9469s', 'f1': 0.1928, 'bleu': 0.009582}
+2481s elapsed: {'exs': 1620, '%done': '20.77%', 'time_left': '9467s', 'f1': 0.1932, 'bleu': 0.009523}
+2498s elapsed: {'exs': 1630, '%done': '20.89%', 'time_left': '9459s', 'f1': 0.1933, 'bleu': 0.009465}
+TEXT:  <t1start> wow , i am an olympic athlete and won a gold medal ! <t1end>
+PREDICTION:  that ' s so cool . i am in the army . you ? 
+~
+2516s elapsed: {'exs': 1640, '%done': '21.02%', 'time_left': '9453s', 'f1': 0.1936, 'bleu': 0.009407}
+2530s elapsed: {'exs': 1650, '%done': '21.15%', 'time_left': '9433s', 'f1': 0.1936, 'bleu': 0.009453}
+2540s elapsed: {'exs': 1660, '%done': '21.28%', 'time_left': '9399s', 'f1': 0.1938, 'bleu': 0.009533}
+2553s elapsed: {'exs': 1670, '%done': '21.41%', 'time_left': '9375s', 'f1': 0.1937, 'bleu': 0.009476}
+2567s elapsed: {'exs': 1680, '%done': '21.54%', 'time_left': '9355s', 'f1': 0.1937, 'bleu': 0.009419}
+2583s elapsed: {'exs': 1690, '%done': '21.66%', 'time_left': '9341s', 'f1': 0.194, 'bleu': 0.009955}
+2601s elapsed: {'exs': 1700, '%done': '21.79%', 'time_left': '9336s', 'f1': 0.1937, 'bleu': 0.009897}
+2619s elapsed: {'exs': 1710, '%done': '21.92%', 'time_left': '9330s', 'f1': 0.1935, 'bleu': 0.009839}
+2636s elapsed: {'exs': 1720, '%done': '22.05%', 'time_left': '9320s', 'f1': 0.1934, 'bleu': 0.009782}
+2655s elapsed: {'exs': 1730, '%done': '22.18%', 'time_left': '9317s', 'f1': 0.1937, 'bleu': 0.009726}
+2668s elapsed: {'exs': 1740, '%done': '22.30%', 'time_left': '9294s', 'f1': 0.1938, 'bleu': 0.00967}
+2682s elapsed: {'exs': 1750, '%done': '22.43%', 'time_left': '9276s', 'f1': 0.194, 'bleu': 0.009615}
+2699s elapsed: {'exs': 1760, '%done': '22.56%', 'time_left': '9265s', 'f1': 0.194, 'bleu': 0.009768}
+2718s elapsed: {'exs': 1770, '%done': '22.69%', 'time_left': '9263s', 'f1': 0.1941, 'bleu': 0.01001}
+2739s elapsed: {'exs': 1780, '%done': '22.82%', 'time_left': '9267s', 'f1': 0.1939, 'bleu': 0.009953}
+2756s elapsed: {'exs': 1790, '%done': '22.95%', 'time_left': '9258s', 'f1': 0.1942, 'bleu': 0.009898}
+2774s elapsed: {'exs': 1800, '%done': '23.07%', 'time_left': '9251s', 'f1': 0.1941, 'bleu': 0.009843}
+2795s elapsed: {'exs': 1810, '%done': '23.20%', 'time_left': '9252s', 'f1': 0.1942, 'bleu': 0.01001}
+2812s elapsed: {'exs': 1820, '%done': '23.33%', 'time_left': '9244s', 'f1': 0.1941, 'bleu': 0.009955}
+2829s elapsed: {'exs': 1830, '%done': '23.46%', 'time_left': '9232s', 'f1': 0.1945, 'bleu': 0.01025}
+2846s elapsed: {'exs': 1840, '%done': '23.59%', 'time_left': '9220s', 'f1': 0.1942, 'bleu': 0.01019}
+2864s elapsed: {'exs': 1850, '%done': '23.71%', 'time_left': '9214s', 'f1': 0.1947, 'bleu': 0.01014}
+2882s elapsed: {'exs': 1860, '%done': '23.84%', 'time_left': '9205s', 'f1': 0.195, 'bleu': 0.0102}
+2900s elapsed: {'exs': 1870, '%done': '23.97%', 'time_left': '9199s', 'f1': 0.195, 'bleu': 0.01014}
+2918s elapsed: {'exs': 1880, '%done': '24.10%', 'time_left': '9193s', 'f1': 0.1951, 'bleu': 0.01009}
+2931s elapsed: {'exs': 1890, '%done': '24.23%', 'time_left': '9166s', 'f1': 0.1952, 'bleu': 0.01013}
+2946s elapsed: {'exs': 1900, '%done': '24.36%', 'time_left': '9150s', 'f1': 0.1953, 'bleu': 0.01008}
+2964s elapsed: {'exs': 1910, '%done': '24.48%', 'time_left': '9142s', 'f1': 0.1952, 'bleu': 0.01002}
+2982s elapsed: {'exs': 1920, '%done': '24.61%', 'time_left': '9134s', 'f1': 0.1947, 'bleu': 0.009972}
+3000s elapsed: {'exs': 1930, '%done': '24.74%', 'time_left': '9126s', 'f1': 0.1949, 'bleu': 0.009921}
+3018s elapsed: {'exs': 1940, '%done': '24.87%', 'time_left': '9119s', 'f1': 0.1951, 'bleu': 0.00987}
+3037s elapsed: {'exs': 1950, '%done': '25.00%', 'time_left': '9113s', 'f1': 0.1949, 'bleu': 0.009819}
+3050s elapsed: {'exs': 1960, '%done': '25.12%', 'time_left': '9091s', 'f1': 0.1951, 'bleu': 0.009769}
+3067s elapsed: {'exs': 1970, '%done': '25.25%', 'time_left': '9080s', 'f1': 0.1952, 'bleu': 0.009719}
+3083s elapsed: {'exs': 1980, '%done': '25.38%', 'time_left': '9066s', 'f1': 0.1952, 'bleu': 0.00967}
+3099s elapsed: {'exs': 1990, '%done': '25.51%', 'time_left': '9049s', 'f1': 0.1949, 'bleu': 0.009622}
+3116s elapsed: {'exs': 2000, '%done': '25.64%', 'time_left': '9040s', 'f1': 0.1952, 'bleu': 0.009574}
+3135s elapsed: {'exs': 2010, '%done': '25.77%', 'time_left': '9033s', 'f1': 0.1951, 'bleu': 0.009526}
+3153s elapsed: {'exs': 2020, '%done': '25.89%', 'time_left': '9023s', 'f1': 0.1952, 'bleu': 0.009479}
+3168s elapsed: {'exs': 2030, '%done': '26.02%', 'time_left': '9007s', 'f1': 0.195, 'bleu': 0.009432}
+3187s elapsed: {'exs': 2040, '%done': '26.15%', 'time_left': '9001s', 'f1': 0.1957, 'bleu': 0.009952}
+3205s elapsed: {'exs': 2050, '%done': '26.28%', 'time_left': '8993s', 'f1': 0.1963, 'bleu': 0.01015}
+3224s elapsed: {'exs': 2060, '%done': '26.41%', 'time_left': '8987s', 'f1': 0.1962, 'bleu': 0.0101}
+3243s elapsed: {'exs': 2070, '%done': '26.54%', 'time_left': '8979s', 'f1': 0.196, 'bleu': 0.01005}
+3261s elapsed: {'exs': 2080, '%done': '26.66%', 'time_left': '8970s', 'f1': 0.196, 'bleu': 0.01021}
+3278s elapsed: {'exs': 2090, '%done': '26.79%', 'time_left': '8958s', 'f1': 0.1961, 'bleu': 0.01016}
+3295s elapsed: {'exs': 2100, '%done': '26.92%', 'time_left': '8947s', 'f1': 0.196, 'bleu': 0.01012}
+3312s elapsed: {'exs': 2110, '%done': '27.05%', 'time_left': '8935s', 'f1': 0.1957, 'bleu': 0.01007}
+3331s elapsed: {'exs': 2120, '%done': '27.18%', 'time_left': '8926s', 'f1': 0.1956, 'bleu': 0.01002}
+3349s elapsed: {'exs': 2130, '%done': '27.30%', 'time_left': '8916s', 'f1': 0.1955, 'bleu': 0.009974}
+3365s elapsed: {'exs': 2140, '%done': '27.43%', 'time_left': '8903s', 'f1': 0.196, 'bleu': 0.01001}
+3383s elapsed: {'exs': 2150, '%done': '27.56%', 'time_left': '8893s', 'f1': 0.1959, 'bleu': 0.009962}
+3400s elapsed: {'exs': 2160, '%done': '27.69%', 'time_left': '8881s', 'f1': 0.1958, 'bleu': 0.009916}
+3417s elapsed: {'exs': 2170, '%done': '27.82%', 'time_left': '8868s', 'f1': 0.1962, 'bleu': 0.00987}
+3434s elapsed: {'exs': 2180, '%done': '27.95%', 'time_left': '8855s', 'f1': 0.1961, 'bleu': 0.01001}
+3450s elapsed: {'exs': 2190, '%done': '28.07%', 'time_left': '8840s', 'f1': 0.1958, 'bleu': 0.009968}
+3468s elapsed: {'exs': 2200, '%done': '28.20%', 'time_left': '8830s', 'f1': 0.1958, 'bleu': 0.01009}
+3484s elapsed: {'exs': 2210, '%done': '28.33%', 'time_left': '8815s', 'f1': 0.1957, 'bleu': 0.01004}
+3500s elapsed: {'exs': 2220, '%done': '28.46%', 'time_left': '8801s', 'f1': 0.1955, 'bleu': 0.009998}
+3519s elapsed: {'exs': 2230, '%done': '28.59%', 'time_left': '8791s', 'f1': 0.1955, 'bleu': 0.009953}
+3535s elapsed: {'exs': 2240, '%done': '28.71%', 'time_left': '8777s', 'f1': 0.1954, 'bleu': 0.009909}
+3554s elapsed: {'exs': 2250, '%done': '28.84%', 'time_left': '8768s', 'f1': 0.1953, 'bleu': 0.009865}
+3567s elapsed: {'exs': 2260, '%done': '28.97%', 'time_left': '8747s', 'f1': 0.1951, 'bleu': 0.009821}
+3582s elapsed: {'exs': 2270, '%done': '29.10%', 'time_left': '8728s', 'f1': 0.1951, 'bleu': 0.009778}
+3600s elapsed: {'exs': 2280, '%done': '29.23%', 'time_left': '8717s', 'f1': 0.1949, 'bleu': 0.009825}
+3614s elapsed: {'exs': 2290, '%done': '29.36%', 'time_left': '8698s', 'f1': 0.1946, 'bleu': 0.009782}
+3628s elapsed: {'exs': 2300, '%done': '29.48%', 'time_left': '8678s', 'f1': 0.1946, 'bleu': 0.009739}
+3645s elapsed: {'exs': 2310, '%done': '29.61%', 'time_left': '8665s', 'f1': 0.1943, 'bleu': 0.009697}
+3664s elapsed: {'exs': 2320, '%done': '29.74%', 'time_left': '8657s', 'f1': 0.1943, 'bleu': 0.009655}
+3682s elapsed: {'exs': 2330, '%done': '29.87%', 'time_left': '8646s', 'f1': 0.1942, 'bleu': 0.009716}
+3697s elapsed: {'exs': 2340, '%done': '30.00%', 'time_left': '8630s', 'f1': 0.1941, 'bleu': 0.009745}
+3716s elapsed: {'exs': 2350, '%done': '30.12%', 'time_left': '8620s', 'f1': 0.1942, 'bleu': 0.009704}
+3735s elapsed: {'exs': 2360, '%done': '30.25%', 'time_left': '8611s', 'f1': 0.1942, 'bleu': 0.009912}
+3753s elapsed: {'exs': 2370, '%done': '30.38%', 'time_left': '8600s', 'f1': 0.194, 'bleu': 0.00987}
+3768s elapsed: {'exs': 2380, '%done': '30.51%', 'time_left': '8582s', 'f1': 0.1939, 'bleu': 0.009828}
+3786s elapsed: {'exs': 2390, '%done': '30.64%', 'time_left': '8571s', 'f1': 0.1938, 'bleu': 0.009787}
+3805s elapsed: {'exs': 2400, '%done': '30.77%', 'time_left': '8563s', 'f1': 0.1937, 'bleu': 0.009747}
+3823s elapsed: {'exs': 2410, '%done': '30.89%', 'time_left': '8552s', 'f1': 0.1938, 'bleu': 0.009706}
+3839s elapsed: {'exs': 2420, '%done': '31.02%', 'time_left': '8538s', 'f1': 0.1934, 'bleu': 0.009666}
+3856s elapsed: {'exs': 2430, '%done': '31.15%', 'time_left': '8524s', 'f1': 0.1936, 'bleu': 0.009626}
+3874s elapsed: {'exs': 2440, '%done': '31.28%', 'time_left': '8513s', 'f1': 0.1936, 'bleu': 0.009587}
+3890s elapsed: {'exs': 2450, '%done': '31.41%', 'time_left': '8496s', 'f1': 0.1935, 'bleu': 0.009548}
+3903s elapsed: {'exs': 2460, '%done': '31.53%', 'time_left': '8476s', 'f1': 0.1932, 'bleu': 0.009509}
+3920s elapsed: {'exs': 2470, '%done': '31.66%', 'time_left': '8461s', 'f1': 0.1929, 'bleu': 0.00947}
+TEXT:  <t1start> cool man . i'm along for the ride <t1end>
+PREDICTION:  i am too . i ' m a good person . you ? 
+~
+3938s elapsed: {'exs': 2480, '%done': '31.79%', 'time_left': '8449s', 'f1': 0.1927, 'bleu': 0.009432}
+3955s elapsed: {'exs': 2490, '%done': '31.92%', 'time_left': '8436s', 'f1': 0.193, 'bleu': 0.009482}
+3972s elapsed: {'exs': 2500, '%done': '32.05%', 'time_left': '8422s', 'f1': 0.1928, 'bleu': 0.009444}
+3990s elapsed: {'exs': 2510, '%done': '32.18%', 'time_left': '8411s', 'f1': 0.1928, 'bleu': 0.009407}
+4007s elapsed: {'exs': 2520, '%done': '32.30%', 'time_left': '8397s', 'f1': 0.1927, 'bleu': 0.009369}
+4025s elapsed: {'exs': 2530, '%done': '32.43%', 'time_left': '8386s', 'f1': 0.1924, 'bleu': 0.009332}
+4037s elapsed: {'exs': 2540, '%done': '32.56%', 'time_left': '8362s', 'f1': 0.1924, 'bleu': 0.009296}
+4054s elapsed: {'exs': 2550, '%done': '32.69%', 'time_left': '8348s', 'f1': 0.1924, 'bleu': 0.009259}
+4070s elapsed: {'exs': 2560, '%done': '32.82%', 'time_left': '8333s', 'f1': 0.1922, 'bleu': 0.009307}
+4086s elapsed: {'exs': 2570, '%done': '32.94%', 'time_left': '8317s', 'f1': 0.1922, 'bleu': 0.009271}
+4102s elapsed: {'exs': 2580, '%done': '33.07%', 'time_left': '8302s', 'f1': 0.1922, 'bleu': 0.009235}
+4116s elapsed: {'exs': 2590, '%done': '33.20%', 'time_left': '8282s', 'f1': 0.1924, 'bleu': 0.0092}
+4131s elapsed: {'exs': 2600, '%done': '33.33%', 'time_left': '8264s', 'f1': 0.1923, 'bleu': 0.009164}
+4144s elapsed: {'exs': 2610, '%done': '33.46%', 'time_left': '8243s', 'f1': 0.1923, 'bleu': 0.009213}
+4161s elapsed: {'exs': 2620, '%done': '33.59%', 'time_left': '8230s', 'f1': 0.1922, 'bleu': 0.009178}
+4178s elapsed: {'exs': 2630, '%done': '33.71%', 'time_left': '8216s', 'f1': 0.1922, 'bleu': 0.009143}
+4196s elapsed: {'exs': 2640, '%done': '33.84%', 'time_left': '8204s', 'f1': 0.192, 'bleu': 0.009109}
+4213s elapsed: {'exs': 2650, '%done': '33.97%', 'time_left': '8190s', 'f1': 0.1918, 'bleu': 0.009074}
+4230s elapsed: {'exs': 2660, '%done': '34.10%', 'time_left': '8176s', 'f1': 0.192, 'bleu': 0.00904}
+4246s elapsed: {'exs': 2670, '%done': '34.23%', 'time_left': '8161s', 'f1': 0.192, 'bleu': 0.009006}
+4266s elapsed: {'exs': 2680, '%done': '34.35%', 'time_left': '8152s', 'f1': 0.1918, 'bleu': 0.008973}
+4280s elapsed: {'exs': 2690, '%done': '34.48%', 'time_left': '8132s', 'f1': 0.1916, 'bleu': 0.00894}
+4294s elapsed: {'exs': 2700, '%done': '34.61%', 'time_left': '8113s', 'f1': 0.1914, 'bleu': 0.008907}
+4312s elapsed: {'exs': 2710, '%done': '34.74%', 'time_left': '8100s', 'f1': 0.1915, 'bleu': 0.008946}
+4329s elapsed: {'exs': 2720, '%done': '34.87%', 'time_left': '8086s', 'f1': 0.1915, 'bleu': 0.008913}
+4342s elapsed: {'exs': 2730, '%done': '35.00%', 'time_left': '8066s', 'f1': 0.1914, 'bleu': 0.008881}
+4358s elapsed: {'exs': 2740, '%done': '35.12%', 'time_left': '8051s', 'f1': 0.1913, 'bleu': 0.008848}
+4375s elapsed: {'exs': 2750, '%done': '35.25%', 'time_left': '8037s', 'f1': 0.1913, 'bleu': 0.008816}
+4393s elapsed: {'exs': 2760, '%done': '35.38%', 'time_left': '8024s', 'f1': 0.1912, 'bleu': 0.008838}
+4408s elapsed: {'exs': 2770, '%done': '35.51%', 'time_left': '8007s', 'f1': 0.1911, 'bleu': 0.008861}
+4426s elapsed: {'exs': 2780, '%done': '35.64%', 'time_left': '7994s', 'f1': 0.1911, 'bleu': 0.008829}
+4444s elapsed: {'exs': 2790, '%done': '35.76%', 'time_left': '7981s', 'f1': 0.1913, 'bleu': 0.008797}
+4462s elapsed: {'exs': 2800, '%done': '35.89%', 'time_left': '7969s', 'f1': 0.191, 'bleu': 0.008766}
+4476s elapsed: {'exs': 2810, '%done': '36.02%', 'time_left': '7950s', 'f1': 0.1912, 'bleu': 0.008735}
+4492s elapsed: {'exs': 2820, '%done': '36.15%', 'time_left': '7935s', 'f1': 0.191, 'bleu': 0.008704}
+TEXT:  <t1start> good day how are you <t1end>
+PREDICTION:  i ' m good , how are you ? 
+~
+4507s elapsed: {'exs': 2830, '%done': '36.28%', 'time_left': '7918s', 'f1': 0.1912, 'bleu': 0.008754}
+4523s elapsed: {'exs': 2840, '%done': '36.41%', 'time_left': '7901s', 'f1': 0.1912, 'bleu': 0.008724}
+4541s elapsed: {'exs': 2850, '%done': '36.53%', 'time_left': '7890s', 'f1': 0.191, 'bleu': 0.008693}
+4560s elapsed: {'exs': 2860, '%done': '36.66%', 'time_left': '7878s', 'f1': 0.191, 'bleu': 0.008663}
+4576s elapsed: {'exs': 2870, '%done': '36.79%', 'time_left': '7863s', 'f1': 0.191, 'bleu': 0.008632}
+4594s elapsed: {'exs': 2880, '%done': '36.92%', 'time_left': '7849s', 'f1': 0.1909, 'bleu': 0.008602}
+4611s elapsed: {'exs': 2890, '%done': '37.05%', 'time_left': '7835s', 'f1': 0.191, 'bleu': 0.008573}
+4628s elapsed: {'exs': 2900, '%done': '37.17%', 'time_left': '7821s', 'f1': 0.1907, 'bleu': 0.008543}
+4643s elapsed: {'exs': 2910, '%done': '37.30%', 'time_left': '7805s', 'f1': 0.1907, 'bleu': 0.008576}
+4662s elapsed: {'exs': 2920, '%done': '37.43%', 'time_left': '7793s', 'f1': 0.1906, 'bleu': 0.00866}
+4677s elapsed: {'exs': 2930, '%done': '37.56%', 'time_left': '7775s', 'f1': 0.1909, 'bleu': 0.008719}
+4695s elapsed: {'exs': 2940, '%done': '37.69%', 'time_left': '7763s', 'f1': 0.1909, 'bleu': 0.00869}
+4715s elapsed: {'exs': 2950, '%done': '37.82%', 'time_left': '7754s', 'f1': 0.1907, 'bleu': 0.00866}
+4732s elapsed: {'exs': 2960, '%done': '37.94%', 'time_left': '7739s', 'f1': 0.1908, 'bleu': 0.008631}
+4749s elapsed: {'exs': 2970, '%done': '38.07%', 'time_left': '7725s', 'f1': 0.191, 'bleu': 0.008661}
+4768s elapsed: {'exs': 2980, '%done': '38.20%', 'time_left': '7714s', 'f1': 0.191, 'bleu': 0.008632}
+4784s elapsed: {'exs': 2990, '%done': '38.33%', 'time_left': '7697s', 'f1': 0.1914, 'bleu': 0.008603}
+4804s elapsed: {'exs': 3000, '%done': '38.46%', 'time_left': '7689s', 'f1': 0.1912, 'bleu': 0.008574}
+4823s elapsed: {'exs': 3010, '%done': '38.58%', 'time_left': '7678s', 'f1': 0.191, 'bleu': 0.008546}
+4838s elapsed: {'exs': 3020, '%done': '38.71%', 'time_left': '7660s', 'f1': 0.1913, 'bleu': 0.008585}
+4854s elapsed: {'exs': 3030, '%done': '38.84%', 'time_left': '7643s', 'f1': 0.1914, 'bleu': 0.008557}
+4865s elapsed: {'exs': 3040, '%done': '38.97%', 'time_left': '7620s', 'f1': 0.1913, 'bleu': 0.008529}
+4878s elapsed: {'exs': 3050, '%done': '39.10%', 'time_left': '7599s', 'f1': 0.1914, 'bleu': 0.008587}
+4894s elapsed: {'exs': 3060, '%done': '39.23%', 'time_left': '7583s', 'f1': 0.1913, 'bleu': 0.008559}
+4909s elapsed: {'exs': 3070, '%done': '39.35%', 'time_left': '7565s', 'f1': 0.1915, 'bleu': 0.008531}
+4927s elapsed: {'exs': 3080, '%done': '39.48%', 'time_left': '7552s', 'f1': 0.1917, 'bleu': 0.008504}
+4941s elapsed: {'exs': 3090, '%done': '39.61%', 'time_left': '7533s', 'f1': 0.1918, 'bleu': 0.008476}
+4956s elapsed: {'exs': 3100, '%done': '39.74%', 'time_left': '7516s', 'f1': 0.1919, 'bleu': 0.008449}
+4973s elapsed: {'exs': 3110, '%done': '39.87%', 'time_left': '7502s', 'f1': 0.1918, 'bleu': 0.008422}
+4992s elapsed: {'exs': 3120, '%done': '39.99%', 'time_left': '7490s', 'f1': 0.1919, 'bleu': 0.008395}
+5010s elapsed: {'exs': 3130, '%done': '40.12%', 'time_left': '7477s', 'f1': 0.1918, 'bleu': 0.008368}
+5028s elapsed: {'exs': 3140, '%done': '40.25%', 'time_left': '7464s', 'f1': 0.1917, 'bleu': 0.008341}
+5047s elapsed: {'exs': 3150, '%done': '40.38%', 'time_left': '7452s', 'f1': 0.1918, 'bleu': 0.008391}
+5065s elapsed: {'exs': 3160, '%done': '40.51%', 'time_left': '7438s', 'f1': 0.1919, 'bleu': 0.008364}
+5082s elapsed: {'exs': 3170, '%done': '40.64%', 'time_left': '7425s', 'f1': 0.1921, 'bleu': 0.008338}
+5100s elapsed: {'exs': 3180, '%done': '40.76%', 'time_left': '7412s', 'f1': 0.1919, 'bleu': 0.008312}
+5118s elapsed: {'exs': 3190, '%done': '40.89%', 'time_left': '7398s', 'f1': 0.1918, 'bleu': 0.008286}
+5138s elapsed: {'exs': 3200, '%done': '41.02%', 'time_left': '7387s', 'f1': 0.1918, 'bleu': 0.00826}
+5156s elapsed: {'exs': 3210, '%done': '41.15%', 'time_left': '7375s', 'f1': 0.1916, 'bleu': 0.008234}
+5174s elapsed: {'exs': 3220, '%done': '41.28%', 'time_left': '7362s', 'f1': 0.1917, 'bleu': 0.008209}
+5191s elapsed: {'exs': 3230, '%done': '41.40%', 'time_left': '7346s', 'f1': 0.1915, 'bleu': 0.008183}
+5208s elapsed: {'exs': 3240, '%done': '41.53%', 'time_left': '7331s', 'f1': 0.1914, 'bleu': 0.008158}
+5226s elapsed: {'exs': 3250, '%done': '41.66%', 'time_left': '7319s', 'f1': 0.1915, 'bleu': 0.008133}
+5243s elapsed: {'exs': 3260, '%done': '41.79%', 'time_left': '7304s', 'f1': 0.1916, 'bleu': 0.008108}
+5259s elapsed: {'exs': 3270, '%done': '41.92%', 'time_left': '7287s', 'f1': 0.1917, 'bleu': 0.008084}
+5275s elapsed: {'exs': 3280, '%done': '42.05%', 'time_left': '7270s', 'f1': 0.1917, 'bleu': 0.008059}
+5292s elapsed: {'exs': 3290, '%done': '42.17%', 'time_left': '7256s', 'f1': 0.1917, 'bleu': 0.008034}
+5309s elapsed: {'exs': 3300, '%done': '42.30%', 'time_left': '7241s', 'f1': 0.1917, 'bleu': 0.00801}
+5322s elapsed: {'exs': 3310, '%done': '42.43%', 'time_left': '7222s', 'f1': 0.1917, 'bleu': 0.007986}
+5341s elapsed: {'exs': 3320, '%done': '42.56%', 'time_left': '7208s', 'f1': 0.1916, 'bleu': 0.007962}
+5357s elapsed: {'exs': 3330, '%done': '42.69%', 'time_left': '7193s', 'f1': 0.1917, 'bleu': 0.007938}
+5374s elapsed: {'exs': 3340, '%done': '42.82%', 'time_left': '7178s', 'f1': 0.1918, 'bleu': 0.007914}
+5394s elapsed: {'exs': 3350, '%done': '42.94%', 'time_left': '7167s', 'f1': 0.1917, 'bleu': 0.007891}
+5411s elapsed: {'exs': 3360, '%done': '43.07%', 'time_left': '7153s', 'f1': 0.1916, 'bleu': 0.007867}
+5428s elapsed: {'exs': 3370, '%done': '43.20%', 'time_left': '7137s', 'f1': 0.1916, 'bleu': 0.007844}
+5444s elapsed: {'exs': 3380, '%done': '43.33%', 'time_left': '7121s', 'f1': 0.1915, 'bleu': 0.007821}
+5460s elapsed: {'exs': 3390, '%done': '43.46%', 'time_left': '7104s', 'f1': 0.1914, 'bleu': 0.007798}
+5477s elapsed: {'exs': 3400, '%done': '43.58%', 'time_left': '7090s', 'f1': 0.1914, 'bleu': 0.007775}
+5495s elapsed: {'exs': 3410, '%done': '43.71%', 'time_left': '7075s', 'f1': 0.1913, 'bleu': 0.007752}
+5513s elapsed: {'exs': 3420, '%done': '43.84%', 'time_left': '7062s', 'f1': 0.191, 'bleu': 0.007729}
+5530s elapsed: {'exs': 3430, '%done': '43.97%', 'time_left': '7047s', 'f1': 0.1909, 'bleu': 0.007707}
+5546s elapsed: {'exs': 3440, '%done': '44.10%', 'time_left': '7030s', 'f1': 0.191, 'bleu': 0.007684}
+5561s elapsed: {'exs': 3450, '%done': '44.23%', 'time_left': '7013s', 'f1': 0.191, 'bleu': 0.007662}
+5580s elapsed: {'exs': 3460, '%done': '44.35%', 'time_left': '7001s', 'f1': 0.1911, 'bleu': 0.00764}
+5596s elapsed: {'exs': 3470, '%done': '44.48%', 'time_left': '6985s', 'f1': 0.1915, 'bleu': 0.007752}
+5613s elapsed: {'exs': 3480, '%done': '44.61%', 'time_left': '6970s', 'f1': 0.1914, 'bleu': 0.007873}
+5628s elapsed: {'exs': 3490, '%done': '44.74%', 'time_left': '6952s', 'f1': 0.1914, 'bleu': 0.007851}
+5645s elapsed: {'exs': 3500, '%done': '44.87%', 'time_left': '6937s', 'f1': 0.1913, 'bleu': 0.007828}
+5662s elapsed: {'exs': 3510, '%done': '44.99%', 'time_left': '6922s', 'f1': 0.1912, 'bleu': 0.007806}
+5679s elapsed: {'exs': 3520, '%done': '45.12%', 'time_left': '6907s', 'f1': 0.1913, 'bleu': 0.007844}
+5696s elapsed: {'exs': 3530, '%done': '45.25%', 'time_left': '6892s', 'f1': 0.1912, 'bleu': 0.007822}
+5714s elapsed: {'exs': 3540, '%done': '45.38%', 'time_left': '6878s', 'f1': 0.1913, 'bleu': 0.0078}
+5733s elapsed: {'exs': 3550, '%done': '45.51%', 'time_left': '6865s', 'f1': 0.1913, 'bleu': 0.00806}
+5750s elapsed: {'exs': 3560, '%done': '45.64%', 'time_left': '6850s', 'f1': 0.1913, 'bleu': 0.008087}
+5765s elapsed: {'exs': 3570, '%done': '45.76%', 'time_left': '6833s', 'f1': 0.1914, 'bleu': 0.008064}
+5783s elapsed: {'exs': 3580, '%done': '45.89%', 'time_left': '6819s', 'f1': 0.1916, 'bleu': 0.008042}
+5802s elapsed: {'exs': 3590, '%done': '46.02%', 'time_left': '6805s', 'f1': 0.1916, 'bleu': 0.008019}
+5815s elapsed: {'exs': 3600, '%done': '46.15%', 'time_left': '6786s', 'f1': 0.1915, 'bleu': 0.007997}
+5833s elapsed: {'exs': 3610, '%done': '46.28%', 'time_left': '6771s', 'f1': 0.1914, 'bleu': 0.007975}
+5851s elapsed: {'exs': 3620, '%done': '46.40%', 'time_left': '6758s', 'f1': 0.1914, 'bleu': 0.007953}
+5870s elapsed: {'exs': 3630, '%done': '46.53%', 'time_left': '6745s', 'f1': 0.1914, 'bleu': 0.007931}
+5889s elapsed: {'exs': 3640, '%done': '46.66%', 'time_left': '6732s', 'f1': 0.1913, 'bleu': 0.007909}
+5906s elapsed: {'exs': 3650, '%done': '46.79%', 'time_left': '6716s', 'f1': 0.1914, 'bleu': 0.007888}
+5922s elapsed: {'exs': 3660, '%done': '46.92%', 'time_left': '6700s', 'f1': 0.1914, 'bleu': 0.007866}
+5942s elapsed: {'exs': 3670, '%done': '47.05%', 'time_left': '6689s', 'f1': 0.1913, 'bleu': 0.007845}
+5957s elapsed: {'exs': 3680, '%done': '47.17%', 'time_left': '6671s', 'f1': 0.1913, 'bleu': 0.007824}
+5974s elapsed: {'exs': 3690, '%done': '47.30%', 'time_left': '6655s', 'f1': 0.1911, 'bleu': 0.007802}
+5992s elapsed: {'exs': 3700, '%done': '47.43%', 'time_left': '6641s', 'f1': 0.1914, 'bleu': 0.007781}
+6007s elapsed: {'exs': 3710, '%done': '47.56%', 'time_left': '6624s', 'f1': 0.1915, 'bleu': 0.00776}
+6023s elapsed: {'exs': 3720, '%done': '47.69%', 'time_left': '6608s', 'f1': 0.1915, 'bleu': 0.007791}
+6039s elapsed: {'exs': 3730, '%done': '47.81%', 'time_left': '6591s', 'f1': 0.1916, 'bleu': 0.00777}
+6055s elapsed: {'exs': 3740, '%done': '47.94%', 'time_left': '6575s', 'f1': 0.1915, 'bleu': 0.007809}
+6073s elapsed: {'exs': 3750, '%done': '48.07%', 'time_left': '6560s', 'f1': 0.1916, 'bleu': 0.007789}
+6092s elapsed: {'exs': 3760, '%done': '48.20%', 'time_left': '6547s', 'f1': 0.1915, 'bleu': 0.007768}
+6110s elapsed: {'exs': 3770, '%done': '48.33%', 'time_left': '6533s', 'f1': 0.1913, 'bleu': 0.007747}
+6129s elapsed: {'exs': 3780, '%done': '48.46%', 'time_left': '6520s', 'f1': 0.1912, 'bleu': 0.007727}
+6142s elapsed: {'exs': 3790, '%done': '48.58%', 'time_left': '6500s', 'f1': 0.1912, 'bleu': 0.007706}
+6158s elapsed: {'exs': 3800, '%done': '48.71%', 'time_left': '6483s', 'f1': 0.1911, 'bleu': 0.007686}
+6176s elapsed: {'exs': 3810, '%done': '48.84%', 'time_left': '6470s', 'f1': 0.1911, 'bleu': 0.007666}
+6193s elapsed: {'exs': 3820, '%done': '48.97%', 'time_left': '6454s', 'f1': 0.191, 'bleu': 0.007646}
+6209s elapsed: {'exs': 3830, '%done': '49.10%', 'time_left': '6438s', 'f1': 0.191, 'bleu': 0.007708}
+6224s elapsed: {'exs': 3840, '%done': '49.22%', 'time_left': '6421s', 'f1': 0.191, 'bleu': 0.007688}
+6243s elapsed: {'exs': 3850, '%done': '49.35%', 'time_left': '6407s', 'f1': 0.1909, 'bleu': 0.007668}
+6261s elapsed: {'exs': 3860, '%done': '49.48%', 'time_left': '6392s', 'f1': 0.1909, 'bleu': 0.007703}
+6281s elapsed: {'exs': 3870, '%done': '49.61%', 'time_left': '6380s', 'f1': 0.191, 'bleu': 0.007772}
+6296s elapsed: {'exs': 3880, '%done': '49.74%', 'time_left': '6362s', 'f1': 0.1912, 'bleu': 0.007821}
+6311s elapsed: {'exs': 3890, '%done': '49.87%', 'time_left': '6345s', 'f1': 0.1911, 'bleu': 0.0078}
+6330s elapsed: {'exs': 3900, '%done': '49.99%', 'time_left': '6332s', 'f1': 0.191, 'bleu': 0.007781}
+6346s elapsed: {'exs': 3910, '%done': '50.12%', 'time_left': '6315s', 'f1': 0.1909, 'bleu': 0.007761}
+6361s elapsed: {'exs': 3920, '%done': '50.25%', 'time_left': '6298s', 'f1': 0.191, 'bleu': 0.007795}
+6378s elapsed: {'exs': 3930, '%done': '50.38%', 'time_left': '6282s', 'f1': 0.1909, 'bleu': 0.007775}
+6396s elapsed: {'exs': 3940, '%done': '50.51%', 'time_left': '6267s', 'f1': 0.1908, 'bleu': 0.007755}
+6412s elapsed: {'exs': 3950, '%done': '50.63%', 'time_left': '6251s', 'f1': 0.1907, 'bleu': 0.007736}
+6427s elapsed: {'exs': 3960, '%done': '50.76%', 'time_left': '6234s', 'f1': 0.1907, 'bleu': 0.007716}
+6444s elapsed: {'exs': 3970, '%done': '50.89%', 'time_left': '6219s', 'f1': 0.1906, 'bleu': 0.007697}
+6461s elapsed: {'exs': 3980, '%done': '51.02%', 'time_left': '6203s', 'f1': 0.1907, 'bleu': 0.007677}
+6472s elapsed: {'exs': 3990, '%done': '51.15%', 'time_left': '6181s', 'f1': 0.1907, 'bleu': 0.007714}
+6484s elapsed: {'exs': 4000, '%done': '51.28%', 'time_left': '6162s', 'f1': 0.1907, 'bleu': 0.007695}
+6499s elapsed: {'exs': 4010, '%done': '51.40%', 'time_left': '6144s', 'f1': 0.1906, 'bleu': 0.007676}
+6517s elapsed: {'exs': 4020, '%done': '51.53%', 'time_left': '6129s', 'f1': 0.1907, 'bleu': 0.007846}
+6535s elapsed: {'exs': 4030, '%done': '51.66%', 'time_left': '6115s', 'f1': 0.1906, 'bleu': 0.007826}
+6549s elapsed: {'exs': 4040, '%done': '51.79%', 'time_left': '6097s', 'f1': 0.1905, 'bleu': 0.007807}
+6566s elapsed: {'exs': 4050, '%done': '51.92%', 'time_left': '6082s', 'f1': 0.1906, 'bleu': 0.007788}
+6582s elapsed: {'exs': 4060, '%done': '52.04%', 'time_left': '6065s', 'f1': 0.1906, 'bleu': 0.007769}
+6600s elapsed: {'exs': 4070, '%done': '52.17%', 'time_left': '6050s', 'f1': 0.1904, 'bleu': 0.00775}
+6615s elapsed: {'exs': 4080, '%done': '52.30%', 'time_left': '6033s', 'f1': 0.1903, 'bleu': 0.007731}
+6630s elapsed: {'exs': 4090, '%done': '52.43%', 'time_left': '6016s', 'f1': 0.1903, 'bleu': 0.007712}
+6647s elapsed: {'exs': 4100, '%done': '52.56%', 'time_left': '6000s', 'f1': 0.1903, 'bleu': 0.007693}
+6664s elapsed: {'exs': 4110, '%done': '52.69%', 'time_left': '5985s', 'f1': 0.1902, 'bleu': 0.007674}
+6682s elapsed: {'exs': 4120, '%done': '52.81%', 'time_left': '5970s', 'f1': 0.1902, 'bleu': 0.007656}
+6701s elapsed: {'exs': 4130, '%done': '52.94%', 'time_left': '5956s', 'f1': 0.1902, 'bleu': 0.007637}
+TEXT:  <t1start> nice ! do you have any kids ? <t1end>
+PREDICTION:  no i don ' t have kids . i just like country music 
+~
+6720s elapsed: {'exs': 4140, '%done': '53.07%', 'time_left': '5943s', 'f1': 0.1902, 'bleu': 0.007619}
+6734s elapsed: {'exs': 4150, '%done': '53.20%', 'time_left': '5924s', 'f1': 0.1901, 'bleu': 0.007601}
+6748s elapsed: {'exs': 4160, '%done': '53.33%', 'time_left': '5906s', 'f1': 0.1901, 'bleu': 0.007582}
+TEXT:  <t1start> i prefer metal . or jazz . <t1end>
+PREDICTION:  i like country music too . i ' m a farmer . what do you do for a living ? 
+~
+6765s elapsed: {'exs': 4170, '%done': '53.45%', 'time_left': '5891s', 'f1': 0.19, 'bleu': 0.007564}
+6779s elapsed: {'exs': 4180, '%done': '53.58%', 'time_left': '5873s', 'f1': 0.1901, 'bleu': 0.00774}
+6799s elapsed: {'exs': 4190, '%done': '53.71%', 'time_left': '5859s', 'f1': 0.19, 'bleu': 0.007721}
+6818s elapsed: {'exs': 4200, '%done': '53.84%', 'time_left': '5846s', 'f1': 0.19, 'bleu': 0.007703}
+6837s elapsed: {'exs': 4210, '%done': '53.97%', 'time_left': '5831s', 'f1': 0.19, 'bleu': 0.007685}
+6852s elapsed: {'exs': 4220, '%done': '54.10%', 'time_left': '5814s', 'f1': 0.19, 'bleu': 0.007744}
+6867s elapsed: {'exs': 4230, '%done': '54.22%', 'time_left': '5797s', 'f1': 0.19, 'bleu': 0.007726}
+6883s elapsed: {'exs': 4240, '%done': '54.35%', 'time_left': '5780s', 'f1': 0.1899, 'bleu': 0.007707}
+6900s elapsed: {'exs': 4250, '%done': '54.48%', 'time_left': '5765s', 'f1': 0.19, 'bleu': 0.007689}
+6916s elapsed: {'exs': 4260, '%done': '54.61%', 'time_left': '5749s', 'f1': 0.19, 'bleu': 0.007671}
+6930s elapsed: {'exs': 4270, '%done': '54.74%', 'time_left': '5731s', 'f1': 0.19, 'bleu': 0.007653}
+6949s elapsed: {'exs': 4280, '%done': '54.86%', 'time_left': '5716s', 'f1': 0.1901, 'bleu': 0.007635}
+6968s elapsed: {'exs': 4290, '%done': '54.99%', 'time_left': '5703s', 'f1': 0.1902, 'bleu': 0.007738}
+6986s elapsed: {'exs': 4300, '%done': '55.12%', 'time_left': '5688s', 'f1': 0.1903, 'bleu': 0.00772}
+7003s elapsed: {'exs': 4310, '%done': '55.25%', 'time_left': '5672s', 'f1': 0.1906, 'bleu': 0.007703}
+7020s elapsed: {'exs': 4320, '%done': '55.38%', 'time_left': '5657s', 'f1': 0.1908, 'bleu': 0.007685}
+7039s elapsed: {'exs': 4330, '%done': '55.51%', 'time_left': '5642s', 'f1': 0.1907, 'bleu': 0.007667}
+7057s elapsed: {'exs': 4340, '%done': '55.63%', 'time_left': '5627s', 'f1': 0.1908, 'bleu': 0.007711}
+7073s elapsed: {'exs': 4350, '%done': '55.76%', 'time_left': '5611s', 'f1': 0.1908, 'bleu': 0.007693}
+7092s elapsed: {'exs': 4360, '%done': '55.89%', 'time_left': '5597s', 'f1': 0.1908, 'bleu': 0.007675}
+7109s elapsed: {'exs': 4370, '%done': '56.02%', 'time_left': '5582s', 'f1': 0.1907, 'bleu': 0.007658}
+7127s elapsed: {'exs': 4380, '%done': '56.15%', 'time_left': '5566s', 'f1': 0.1907, 'bleu': 0.00764}
+7145s elapsed: {'exs': 4390, '%done': '56.27%', 'time_left': '5551s', 'f1': 0.1905, 'bleu': 0.007623}
+7163s elapsed: {'exs': 4400, '%done': '56.40%', 'time_left': '5537s', 'f1': 0.1905, 'bleu': 0.007681}
+7182s elapsed: {'exs': 4410, '%done': '56.53%', 'time_left': '5523s', 'f1': 0.1906, 'bleu': 0.007664}
+7199s elapsed: {'exs': 4420, '%done': '56.66%', 'time_left': '5506s', 'f1': 0.1905, 'bleu': 0.007646}
+7214s elapsed: {'exs': 4430, '%done': '56.79%', 'time_left': '5489s', 'f1': 0.1904, 'bleu': 0.007629}
+7232s elapsed: {'exs': 4440, '%done': '56.92%', 'time_left': '5474s', 'f1': 0.1905, 'bleu': 0.007654}
+7252s elapsed: {'exs': 4450, '%done': '57.04%', 'time_left': '5461s', 'f1': 0.1906, 'bleu': 0.007637}
+7269s elapsed: {'exs': 4460, '%done': '57.17%', 'time_left': '5445s', 'f1': 0.1907, 'bleu': 0.00762}
+7287s elapsed: {'exs': 4470, '%done': '57.30%', 'time_left': '5430s', 'f1': 0.191, 'bleu': 0.00767}
+7304s elapsed: {'exs': 4480, '%done': '57.43%', 'time_left': '5414s', 'f1': 0.191, 'bleu': 0.007653}
+7321s elapsed: {'exs': 4490, '%done': '57.56%', 'time_left': '5399s', 'f1': 0.1912, 'bleu': 0.007858}
+7337s elapsed: {'exs': 4500, '%done': '57.68%', 'time_left': '5382s', 'f1': 0.1911, 'bleu': 0.007841}
+7352s elapsed: {'exs': 4510, '%done': '57.81%', 'time_left': '5365s', 'f1': 0.1912, 'bleu': 0.007824}
+7370s elapsed: {'exs': 4520, '%done': '57.94%', 'time_left': '5350s', 'f1': 0.1913, 'bleu': 0.007806}
+7387s elapsed: {'exs': 4530, '%done': '58.07%', 'time_left': '5334s', 'f1': 0.1913, 'bleu': 0.007789}
+7407s elapsed: {'exs': 4540, '%done': '58.20%', 'time_left': '5320s', 'f1': 0.1913, 'bleu': 0.007772}
+7424s elapsed: {'exs': 4550, '%done': '58.33%', 'time_left': '5304s', 'f1': 0.1913, 'bleu': 0.007755}
+7439s elapsed: {'exs': 4560, '%done': '58.45%', 'time_left': '5287s', 'f1': 0.1913, 'bleu': 0.007738}
+7455s elapsed: {'exs': 4570, '%done': '58.58%', 'time_left': '5271s', 'f1': 0.1914, 'bleu': 0.007721}
+7472s elapsed: {'exs': 4580, '%done': '58.71%', 'time_left': '5254s', 'f1': 0.1914, 'bleu': 0.007818}
+7488s elapsed: {'exs': 4590, '%done': '58.84%', 'time_left': '5238s', 'f1': 0.1914, 'bleu': 0.007918}
+7509s elapsed: {'exs': 4600, '%done': '58.97%', 'time_left': '5225s', 'f1': 0.1914, 'bleu': 0.007901}
+7521s elapsed: {'exs': 4610, '%done': '59.09%', 'time_left': '5205s', 'f1': 0.1914, 'bleu': 0.007934}
+7533s elapsed: {'exs': 4620, '%done': '59.22%', 'time_left': '5187s', 'f1': 0.1914, 'bleu': 0.007917}
+7549s elapsed: {'exs': 4630, '%done': '59.35%', 'time_left': '5170s', 'f1': 0.1915, 'bleu': 0.00796}
+7568s elapsed: {'exs': 4640, '%done': '59.48%', 'time_left': '5155s', 'f1': 0.1914, 'bleu': 0.007942}
+7581s elapsed: {'exs': 4650, '%done': '59.61%', 'time_left': '5137s', 'f1': 0.1914, 'bleu': 0.007925}
+7596s elapsed: {'exs': 4660, '%done': '59.74%', 'time_left': '5120s', 'f1': 0.1913, 'bleu': 0.007908}
+7613s elapsed: {'exs': 4670, '%done': '59.86%', 'time_left': '5104s', 'f1': 0.1912, 'bleu': 0.007891}
+7630s elapsed: {'exs': 4680, '%done': '59.99%', 'time_left': '5088s', 'f1': 0.1912, 'bleu': 0.007875}
+7643s elapsed: {'exs': 4690, '%done': '60.12%', 'time_left': '5070s', 'f1': 0.1911, 'bleu': 0.007895}
+7658s elapsed: {'exs': 4700, '%done': '60.25%', 'time_left': '5053s', 'f1': 0.191, 'bleu': 0.007878}
+7675s elapsed: {'exs': 4710, '%done': '60.38%', 'time_left': '5037s', 'f1': 0.191, 'bleu': 0.007862}
+7691s elapsed: {'exs': 4720, '%done': '60.51%', 'time_left': '5020s', 'f1': 0.1912, 'bleu': 0.007954}
+7705s elapsed: {'exs': 4730, '%done': '60.63%', 'time_left': '5002s', 'f1': 0.1913, 'bleu': 0.007992}
+7720s elapsed: {'exs': 4740, '%done': '60.76%', 'time_left': '4985s', 'f1': 0.1913, 'bleu': 0.007975}
+7737s elapsed: {'exs': 4750, '%done': '60.89%', 'time_left': '4969s', 'f1': 0.1913, 'bleu': 0.007958}
+7754s elapsed: {'exs': 4760, '%done': '61.02%', 'time_left': '4954s', 'f1': 0.1912, 'bleu': 0.007941}
+7772s elapsed: {'exs': 4770, '%done': '61.15%', 'time_left': '4938s', 'f1': 0.1913, 'bleu': 0.007925}
+7790s elapsed: {'exs': 4780, '%done': '61.27%', 'time_left': '4923s', 'f1': 0.1913, 'bleu': 0.007943}
+7807s elapsed: {'exs': 4790, '%done': '61.40%', 'time_left': '4907s', 'f1': 0.1913, 'bleu': 0.007926}
+7822s elapsed: {'exs': 4800, '%done': '61.53%', 'time_left': '4890s', 'f1': 0.1912, 'bleu': 0.00791}
+7836s elapsed: {'exs': 4810, '%done': '61.66%', 'time_left': '4873s', 'f1': 0.1913, 'bleu': 0.007957}
+7851s elapsed: {'exs': 4820, '%done': '61.79%', 'time_left': '4856s', 'f1': 0.1912, 'bleu': 0.007941}
+7868s elapsed: {'exs': 4830, '%done': '61.92%', 'time_left': '4840s', 'f1': 0.1912, 'bleu': 0.007924}
+7885s elapsed: {'exs': 4840, '%done': '62.04%', 'time_left': '4823s', 'f1': 0.1913, 'bleu': 0.007908}
+7902s elapsed: {'exs': 4850, '%done': '62.17%', 'time_left': '4808s', 'f1': 0.1912, 'bleu': 0.007892}
+7917s elapsed: {'exs': 4860, '%done': '62.30%', 'time_left': '4791s', 'f1': 0.1913, 'bleu': 0.007875}
+7933s elapsed: {'exs': 4870, '%done': '62.43%', 'time_left': '4774s', 'f1': 0.1912, 'bleu': 0.007905}
+7947s elapsed: {'exs': 4880, '%done': '62.56%', 'time_left': '4757s', 'f1': 0.1914, 'bleu': 0.007889}
+7959s elapsed: {'exs': 4890, '%done': '62.68%', 'time_left': '4738s', 'f1': 0.1913, 'bleu': 0.007872}
+7972s elapsed: {'exs': 4900, '%done': '62.81%', 'time_left': '4720s', 'f1': 0.1912, 'bleu': 0.007856}
+7989s elapsed: {'exs': 4910, '%done': '62.94%', 'time_left': '4704s', 'f1': 0.1911, 'bleu': 0.00784}
+8007s elapsed: {'exs': 4920, '%done': '63.07%', 'time_left': '4689s', 'f1': 0.191, 'bleu': 0.007824}
+8022s elapsed: {'exs': 4930, '%done': '63.20%', 'time_left': '4671s', 'f1': 0.1912, 'bleu': 0.007809}
+8040s elapsed: {'exs': 4940, '%done': '63.33%', 'time_left': '4656s', 'f1': 0.1912, 'bleu': 0.007793}
+8058s elapsed: {'exs': 4950, '%done': '63.45%', 'time_left': '4641s', 'f1': 0.191, 'bleu': 0.007838}
+8075s elapsed: {'exs': 4960, '%done': '63.58%', 'time_left': '4625s', 'f1': 0.191, 'bleu': 0.007822}
+8090s elapsed: {'exs': 4970, '%done': '63.71%', 'time_left': '4608s', 'f1': 0.1909, 'bleu': 0.007806}
+8106s elapsed: {'exs': 4980, '%done': '63.84%', 'time_left': '4592s', 'f1': 0.1908, 'bleu': 0.007791}
+8124s elapsed: {'exs': 4990, '%done': '63.97%', 'time_left': '4576s', 'f1': 0.1908, 'bleu': 0.007775}
+8143s elapsed: {'exs': 5000, '%done': '64.09%', 'time_left': '4561s', 'f1': 0.1908, 'bleu': 0.00776}
+8160s elapsed: {'exs': 5010, '%done': '64.22%', 'time_left': '4546s', 'f1': 0.1906, 'bleu': 0.007744}
+8178s elapsed: {'exs': 5020, '%done': '64.35%', 'time_left': '4530s', 'f1': 0.1906, 'bleu': 0.007928}
+8195s elapsed: {'exs': 5030, '%done': '64.48%', 'time_left': '4514s', 'f1': 0.1907, 'bleu': 0.007912}
+8212s elapsed: {'exs': 5040, '%done': '64.61%', 'time_left': '4498s', 'f1': 0.1907, 'bleu': 0.007897}
+8228s elapsed: {'exs': 5050, '%done': '64.74%', 'time_left': '4482s', 'f1': 0.1905, 'bleu': 0.007881}
+8243s elapsed: {'exs': 5060, '%done': '64.86%', 'time_left': '4465s', 'f1': 0.1904, 'bleu': 0.007865}
+8257s elapsed: {'exs': 5070, '%done': '64.99%', 'time_left': '4448s', 'f1': 0.1903, 'bleu': 0.00785}
+8274s elapsed: {'exs': 5080, '%done': '65.12%', 'time_left': '4431s', 'f1': 0.1902, 'bleu': 0.007834}
+8291s elapsed: {'exs': 5090, '%done': '65.25%', 'time_left': '4416s', 'f1': 0.1903, 'bleu': 0.007819}
+8309s elapsed: {'exs': 5100, '%done': '65.38%', 'time_left': '4400s', 'f1': 0.1902, 'bleu': 0.007804}
+8325s elapsed: {'exs': 5110, '%done': '65.50%', 'time_left': '4384s', 'f1': 0.1904, 'bleu': 0.007884}
+8344s elapsed: {'exs': 5120, '%done': '65.63%', 'time_left': '4369s', 'f1': 0.1904, 'bleu': 0.007869}
+8357s elapsed: {'exs': 5130, '%done': '65.76%', 'time_left': '4351s', 'f1': 0.1905, 'bleu': 0.007853}
+8375s elapsed: {'exs': 5140, '%done': '65.89%', 'time_left': '4335s', 'f1': 0.1904, 'bleu': 0.007838}
+8391s elapsed: {'exs': 5150, '%done': '66.02%', 'time_left': '4319s', 'f1': 0.1903, 'bleu': 0.007823}
+8409s elapsed: {'exs': 5160, '%done': '66.15%', 'time_left': '4303s', 'f1': 0.1904, 'bleu': 0.007808}
+8425s elapsed: {'exs': 5170, '%done': '66.27%', 'time_left': '4287s', 'f1': 0.1904, 'bleu': 0.007793}
+8443s elapsed: {'exs': 5180, '%done': '66.40%', 'time_left': '4272s', 'f1': 0.1904, 'bleu': 0.007845}
+8459s elapsed: {'exs': 5190, '%done': '66.53%', 'time_left': '4255s', 'f1': 0.1903, 'bleu': 0.00783}
+8474s elapsed: {'exs': 5200, '%done': '66.66%', 'time_left': '4238s', 'f1': 0.1903, 'bleu': 0.007815}
+8488s elapsed: {'exs': 5210, '%done': '66.79%', 'time_left': '4221s', 'f1': 0.1903, 'bleu': 0.00787}
+8503s elapsed: {'exs': 5220, '%done': '66.91%', 'time_left': '4204s', 'f1': 0.1904, 'bleu': 0.007855}
+8516s elapsed: {'exs': 5230, '%done': '67.04%', 'time_left': '4186s', 'f1': 0.1904, 'bleu': 0.00784}
+8532s elapsed: {'exs': 5240, '%done': '67.17%', 'time_left': '4169s', 'f1': 0.1904, 'bleu': 0.007825}
+8545s elapsed: {'exs': 5250, '%done': '67.30%', 'time_left': '4152s', 'f1': 0.1903, 'bleu': 0.00781}
+8560s elapsed: {'exs': 5260, '%done': '67.43%', 'time_left': '4135s', 'f1': 0.1903, 'bleu': 0.007795}
+8575s elapsed: {'exs': 5270, '%done': '67.56%', 'time_left': '4118s', 'f1': 0.1903, 'bleu': 0.00778}
+8590s elapsed: {'exs': 5280, '%done': '67.68%', 'time_left': '4101s', 'f1': 0.1904, 'bleu': 0.007809}
+8607s elapsed: {'exs': 5290, '%done': '67.81%', 'time_left': '4085s', 'f1': 0.1903, 'bleu': 0.007794}
+8626s elapsed: {'exs': 5300, '%done': '67.94%', 'time_left': '4070s', 'f1': 0.1903, 'bleu': 0.007779}
+8643s elapsed: {'exs': 5310, '%done': '68.07%', 'time_left': '4055s', 'f1': 0.1904, 'bleu': 0.007765}
+8659s elapsed: {'exs': 5320, '%done': '68.20%', 'time_left': '4038s', 'f1': 0.1902, 'bleu': 0.00775}
+8675s elapsed: {'exs': 5330, '%done': '68.32%', 'time_left': '4021s', 'f1': 0.1903, 'bleu': 0.007735}
+8692s elapsed: {'exs': 5340, '%done': '68.45%', 'time_left': '4006s', 'f1': 0.1902, 'bleu': 0.007721}
+8707s elapsed: {'exs': 5350, '%done': '68.58%', 'time_left': '3989s', 'f1': 0.1902, 'bleu': 0.007707}
+8725s elapsed: {'exs': 5360, '%done': '68.71%', 'time_left': '3973s', 'f1': 0.1902, 'bleu': 0.007692}
+8741s elapsed: {'exs': 5370, '%done': '68.84%', 'time_left': '3957s', 'f1': 0.1902, 'bleu': 0.007678}
+8755s elapsed: {'exs': 5380, '%done': '68.97%', 'time_left': '3939s', 'f1': 0.1902, 'bleu': 0.007664}
+8770s elapsed: {'exs': 5390, '%done': '69.09%', 'time_left': '3923s', 'f1': 0.1901, 'bleu': 0.007649}
+8786s elapsed: {'exs': 5400, '%done': '69.22%', 'time_left': '3906s', 'f1': 0.19, 'bleu': 0.007635}
+8803s elapsed: {'exs': 5410, '%done': '69.35%', 'time_left': '3890s', 'f1': 0.19, 'bleu': 0.007621}
+8818s elapsed: {'exs': 5420, '%done': '69.48%', 'time_left': '3874s', 'f1': 0.19, 'bleu': 0.007607}
+8836s elapsed: {'exs': 5430, '%done': '69.61%', 'time_left': '3858s', 'f1': 0.1902, 'bleu': 0.007593}
+8850s elapsed: {'exs': 5440, '%done': '69.73%', 'time_left': '3841s', 'f1': 0.1901, 'bleu': 0.007579}
+8865s elapsed: {'exs': 5450, '%done': '69.86%', 'time_left': '3824s', 'f1': 0.19, 'bleu': 0.007565}
+8882s elapsed: {'exs': 5460, '%done': '69.99%', 'time_left': '3808s', 'f1': 0.19, 'bleu': 0.007628}
+8901s elapsed: {'exs': 5470, '%done': '70.12%', 'time_left': '3793s', 'f1': 0.19, 'bleu': 0.007648}
+8919s elapsed: {'exs': 5480, '%done': '70.25%', 'time_left': '3777s', 'f1': 0.19, 'bleu': 0.007634}
+8934s elapsed: {'exs': 5490, '%done': '70.38%', 'time_left': '3760s', 'f1': 0.19, 'bleu': 0.00762}
+8949s elapsed: {'exs': 5500, '%done': '70.50%', 'time_left': '3744s', 'f1': 0.19, 'bleu': 0.007607}
+8965s elapsed: {'exs': 5510, '%done': '70.63%', 'time_left': '3727s', 'f1': 0.19, 'bleu': 0.007593}
+8979s elapsed: {'exs': 5520, '%done': '70.76%', 'time_left': '3710s', 'f1': 0.19, 'bleu': 0.007579}
+8994s elapsed: {'exs': 5530, '%done': '70.89%', 'time_left': '3693s', 'f1': 0.1899, 'bleu': 0.007565}
+9008s elapsed: {'exs': 5540, '%done': '71.02%', 'time_left': '3676s', 'f1': 0.19, 'bleu': 0.007552}
+9023s elapsed: {'exs': 5550, '%done': '71.14%', 'time_left': '3659s', 'f1': 0.1901, 'bleu': 0.007616}
+9041s elapsed: {'exs': 5560, '%done': '71.27%', 'time_left': '3644s', 'f1': 0.19, 'bleu': 0.007602}
+TEXT:  <t1start> hello , how are you doing today ? <t1end>
+PREDICTION:  i ' m good . i am a teacher . what do you do for a living ? 
+~
+9059s elapsed: {'exs': 5570, '%done': '71.40%', 'time_left': '3628s', 'f1': 0.1903, 'bleu': 0.007589}
+9076s elapsed: {'exs': 5580, '%done': '71.53%', 'time_left': '3612s', 'f1': 0.1903, 'bleu': 0.007575}
+9092s elapsed: {'exs': 5590, '%done': '71.66%', 'time_left': '3596s', 'f1': 0.1903, 'bleu': 0.007593}
+9107s elapsed: {'exs': 5600, '%done': '71.79%', 'time_left': '3579s', 'f1': 0.1903, 'bleu': 0.00758}
+TEXT:  <t1start> wow ! i'm actually pregnant too <t1end>
+PREDICTION:  congratulations ! i ' m so happy for you . i have two kids and a house . 
+~
+9122s elapsed: {'exs': 5610, '%done': '71.91%', 'time_left': '3562s', 'f1': 0.1903, 'bleu': 0.007566}
+TEXT:  <t1start> being a cancer survivor i need to watch what i eat <t1end>
+PREDICTION:  i love to cook , i am a great cook . 
+~
+9140s elapsed: {'exs': 5620, '%done': '72.04%', 'time_left': '3547s', 'f1': 0.1902, 'bleu': 0.007553}
+9157s elapsed: {'exs': 5630, '%done': '72.17%', 'time_left': '3531s', 'f1': 0.1902, 'bleu': 0.007539}
+9173s elapsed: {'exs': 5640, '%done': '72.30%', 'time_left': '3514s', 'f1': 0.1901, 'bleu': 0.007526}
+9193s elapsed: {'exs': 5650, '%done': '72.43%', 'time_left': '3500s', 'f1': 0.1902, 'bleu': 0.007592}
+9209s elapsed: {'exs': 5660, '%done': '72.55%', 'time_left': '3483s', 'f1': 0.1901, 'bleu': 0.007578}
+9228s elapsed: {'exs': 5670, '%done': '72.68%', 'time_left': '3468s', 'f1': 0.1901, 'bleu': 0.007565}
+9240s elapsed: {'exs': 5680, '%done': '72.81%', 'time_left': '3450s', 'f1': 0.1901, 'bleu': 0.007552}
+9254s elapsed: {'exs': 5690, '%done': '72.94%', 'time_left': '3433s', 'f1': 0.19, 'bleu': 0.007538}
+9270s elapsed: {'exs': 5700, '%done': '73.07%', 'time_left': '3417s', 'f1': 0.19, 'bleu': 0.007525}
+9286s elapsed: {'exs': 5710, '%done': '73.20%', 'time_left': '3400s', 'f1': 0.1899, 'bleu': 0.007512}
+9303s elapsed: {'exs': 5720, '%done': '73.32%', 'time_left': '3384s', 'f1': 0.1899, 'bleu': 0.007499}
+9321s elapsed: {'exs': 5730, '%done': '73.45%', 'time_left': '3368s', 'f1': 0.19, 'bleu': 0.007486}
+9336s elapsed: {'exs': 5740, '%done': '73.58%', 'time_left': '3352s', 'f1': 0.1899, 'bleu': 0.007473}
+9355s elapsed: {'exs': 5750, '%done': '73.71%', 'time_left': '3337s', 'f1': 0.19, 'bleu': 0.00746}
+9372s elapsed: {'exs': 5760, '%done': '73.84%', 'time_left': '3320s', 'f1': 0.19, 'bleu': 0.007477}
+9391s elapsed: {'exs': 5770, '%done': '73.96%', 'time_left': '3305s', 'f1': 0.19, 'bleu': 0.007464}
+9410s elapsed: {'exs': 5780, '%done': '74.09%', 'time_left': '3290s', 'f1': 0.1899, 'bleu': 0.007451}
+9428s elapsed: {'exs': 5790, '%done': '74.22%', 'time_left': '3274s', 'f1': 0.1899, 'bleu': 0.007438}
+9443s elapsed: {'exs': 5800, '%done': '74.35%', 'time_left': '3257s', 'f1': 0.19, 'bleu': 0.007482}
+9460s elapsed: {'exs': 5810, '%done': '74.48%', 'time_left': '3242s', 'f1': 0.1899, 'bleu': 0.007469}
+9478s elapsed: {'exs': 5820, '%done': '74.61%', 'time_left': '3226s', 'f1': 0.19, 'bleu': 0.007456}
+9496s elapsed: {'exs': 5830, '%done': '74.73%', 'time_left': '3210s', 'f1': 0.19, 'bleu': 0.007443}
+TEXT:  <t1start> i'm home alone , my boyfriend is working . i'm bored . <t1end>
+PREDICTION:  what do you do for a living ? 
+~
+9510s elapsed: {'exs': 5840, '%done': '74.86%', 'time_left': '3193s', 'f1': 0.1901, 'bleu': 0.007484}
+9526s elapsed: {'exs': 5850, '%done': '74.99%', 'time_left': '3176s', 'f1': 0.1901, 'bleu': 0.007471}
+9540s elapsed: {'exs': 5860, '%done': '75.12%', 'time_left': '3159s', 'f1': 0.19, 'bleu': 0.007459}
+9557s elapsed: {'exs': 5870, '%done': '75.25%', 'time_left': '3143s', 'f1': 0.1901, 'bleu': 0.007446}
+9572s elapsed: {'exs': 5880, '%done': '75.37%', 'time_left': '3127s', 'f1': 0.1902, 'bleu': 0.007471}
+9588s elapsed: {'exs': 5890, '%done': '75.50%', 'time_left': '3110s', 'f1': 0.1901, 'bleu': 0.007459}
+9605s elapsed: {'exs': 5900, '%done': '75.63%', 'time_left': '3094s', 'f1': 0.1901, 'bleu': 0.007446}
+9623s elapsed: {'exs': 5910, '%done': '75.76%', 'time_left': '3079s', 'f1': 0.1901, 'bleu': 0.007434}
+9641s elapsed: {'exs': 5920, '%done': '75.89%', 'time_left': '3063s', 'f1': 0.1901, 'bleu': 0.007421}
+9657s elapsed: {'exs': 5930, '%done': '76.02%', 'time_left': '3047s', 'f1': 0.1901, 'bleu': 0.007472}
+9671s elapsed: {'exs': 5940, '%done': '76.14%', 'time_left': '3029s', 'f1': 0.1901, 'bleu': 0.00746}
+9686s elapsed: {'exs': 5950, '%done': '76.27%', 'time_left': '3013s', 'f1': 0.19, 'bleu': 0.007447}
+9704s elapsed: {'exs': 5960, '%done': '76.40%', 'time_left': '2997s', 'f1': 0.1899, 'bleu': 0.007434}
+9716s elapsed: {'exs': 5970, '%done': '76.53%', 'time_left': '2980s', 'f1': 0.19, 'bleu': 0.007422}
+9730s elapsed: {'exs': 5980, '%done': '76.66%', 'time_left': '2963s', 'f1': 0.1899, 'bleu': 0.00741}
+9745s elapsed: {'exs': 5990, '%done': '76.79%', 'time_left': '2946s', 'f1': 0.1899, 'bleu': 0.007397}
+9763s elapsed: {'exs': 6000, '%done': '76.91%', 'time_left': '2930s', 'f1': 0.19, 'bleu': 0.007385}
+9781s elapsed: {'exs': 6010, '%done': '77.04%', 'time_left': '2914s', 'f1': 0.19, 'bleu': 0.007373}
+9799s elapsed: {'exs': 6020, '%done': '77.17%', 'time_left': '2899s', 'f1': 0.1899, 'bleu': 0.00736}
+9818s elapsed: {'exs': 6030, '%done': '77.30%', 'time_left': '2883s', 'f1': 0.1898, 'bleu': 0.007348}
+9837s elapsed: {'exs': 6040, '%done': '77.43%', 'time_left': '2868s', 'f1': 0.1899, 'bleu': 0.007336}
+9852s elapsed: {'exs': 6050, '%done': '77.55%', 'time_left': '2851s', 'f1': 0.1898, 'bleu': 0.007324}
+9872s elapsed: {'exs': 6060, '%done': '77.68%', 'time_left': '2836s', 'f1': 0.1897, 'bleu': 0.007312}
+9889s elapsed: {'exs': 6070, '%done': '77.81%', 'time_left': '2820s', 'f1': 0.1896, 'bleu': 0.0073}
+9904s elapsed: {'exs': 6080, '%done': '77.94%', 'time_left': '2803s', 'f1': 0.1898, 'bleu': 0.007288}
+9921s elapsed: {'exs': 6090, '%done': '78.07%', 'time_left': '2787s', 'f1': 0.1897, 'bleu': 0.007276}
+9938s elapsed: {'exs': 6100, '%done': '78.20%', 'time_left': '2771s', 'f1': 0.1899, 'bleu': 0.007332}
+9956s elapsed: {'exs': 6110, '%done': '78.32%', 'time_left': '2755s', 'f1': 0.19, 'bleu': 0.007372}
+9972s elapsed: {'exs': 6120, '%done': '78.45%', 'time_left': '2739s', 'f1': 0.1899, 'bleu': 0.00736}
+9986s elapsed: {'exs': 6130, '%done': '78.58%', 'time_left': '2722s', 'f1': 0.1899, 'bleu': 0.007348}
+10004s elapsed: {'exs': 6140, '%done': '78.71%', 'time_left': '2706s', 'f1': 0.1899, 'bleu': 0.007366}
+10021s elapsed: {'exs': 6150, '%done': '78.84%', 'time_left': '2690s', 'f1': 0.19, 'bleu': 0.007428}
+10035s elapsed: {'exs': 6160, '%done': '78.96%', 'time_left': '2673s', 'f1': 0.1901, 'bleu': 0.007416}
+10051s elapsed: {'exs': 6170, '%done': '79.09%', 'time_left': '2656s', 'f1': 0.19, 'bleu': 0.007404}
+10065s elapsed: {'exs': 6180, '%done': '79.22%', 'time_left': '2640s', 'f1': 0.19, 'bleu': 0.007392}
+10082s elapsed: {'exs': 6190, '%done': '79.35%', 'time_left': '2624s', 'f1': 0.19, 'bleu': 0.00738}
+10101s elapsed: {'exs': 6200, '%done': '79.48%', 'time_left': '2608s', 'f1': 0.19, 'bleu': 0.007368}
+10118s elapsed: {'exs': 6210, '%done': '79.61%', 'time_left': '2592s', 'f1': 0.1901, 'bleu': 0.007357}
+10135s elapsed: {'exs': 6220, '%done': '79.73%', 'time_left': '2576s', 'f1': 0.1901, 'bleu': 0.007345}
+10153s elapsed: {'exs': 6230, '%done': '79.86%', 'time_left': '2560s', 'f1': 0.1901, 'bleu': 0.007333}
+10171s elapsed: {'exs': 6240, '%done': '79.99%', 'time_left': '2544s', 'f1': 0.1901, 'bleu': 0.007321}
+10191s elapsed: {'exs': 6250, '%done': '80.12%', 'time_left': '2529s', 'f1': 0.1902, 'bleu': 0.007422}
+10205s elapsed: {'exs': 6260, '%done': '80.25%', 'time_left': '2512s', 'f1': 0.1903, 'bleu': 0.00741}
+10222s elapsed: {'exs': 6270, '%done': '80.37%', 'time_left': '2496s', 'f1': 0.1903, 'bleu': 0.007445}
+10242s elapsed: {'exs': 6280, '%done': '80.50%', 'time_left': '2480s', 'f1': 0.1903, 'bleu': 0.007491}
+10255s elapsed: {'exs': 6290, '%done': '80.63%', 'time_left': '2463s', 'f1': 0.1904, 'bleu': 0.007507}
+10270s elapsed: {'exs': 6300, '%done': '80.76%', 'time_left': '2446s', 'f1': 0.1904, 'bleu': 0.007495}
+10286s elapsed: {'exs': 6310, '%done': '80.89%', 'time_left': '2430s', 'f1': 0.1904, 'bleu': 0.007483}
+10303s elapsed: {'exs': 6320, '%done': '81.02%', 'time_left': '2414s', 'f1': 0.1903, 'bleu': 0.007471}
+10317s elapsed: {'exs': 6330, '%done': '81.14%', 'time_left': '2397s', 'f1': 0.1903, 'bleu': 0.007459}
+10336s elapsed: {'exs': 6340, '%done': '81.27%', 'time_left': '2382s', 'f1': 0.1903, 'bleu': 0.007448}
+10355s elapsed: {'exs': 6350, '%done': '81.40%', 'time_left': '2366s', 'f1': 0.1903, 'bleu': 0.007436}
+10373s elapsed: {'exs': 6360, '%done': '81.53%', 'time_left': '2350s', 'f1': 0.1904, 'bleu': 0.007424}
+10390s elapsed: {'exs': 6370, '%done': '81.66%', 'time_left': '2334s', 'f1': 0.1904, 'bleu': 0.007456}
+10407s elapsed: {'exs': 6380, '%done': '81.78%', 'time_left': '2318s', 'f1': 0.1905, 'bleu': 0.007444}
+10425s elapsed: {'exs': 6390, '%done': '81.91%', 'time_left': '2302s', 'f1': 0.1904, 'bleu': 0.007433}
+10440s elapsed: {'exs': 6400, '%done': '82.04%', 'time_left': '2285s', 'f1': 0.1904, 'bleu': 0.007421}
+10458s elapsed: {'exs': 6410, '%done': '82.17%', 'time_left': '2269s', 'f1': 0.1904, 'bleu': 0.00741}
+10473s elapsed: {'exs': 6420, '%done': '82.30%', 'time_left': '2253s', 'f1': 0.1904, 'bleu': 0.007425}
+10490s elapsed: {'exs': 6430, '%done': '82.43%', 'time_left': '2236s', 'f1': 0.1904, 'bleu': 0.007414}
+10507s elapsed: {'exs': 6440, '%done': '82.55%', 'time_left': '2220s', 'f1': 0.1904, 'bleu': 0.007402}
+10522s elapsed: {'exs': 6450, '%done': '82.68%', 'time_left': '2204s', 'f1': 0.1905, 'bleu': 0.007391}
+10541s elapsed: {'exs': 6460, '%done': '82.81%', 'time_left': '2188s', 'f1': 0.1905, 'bleu': 0.007379}
+10558s elapsed: {'exs': 6470, '%done': '82.94%', 'time_left': '2172s', 'f1': 0.1904, 'bleu': 0.007404}
+10572s elapsed: {'exs': 6480, '%done': '83.07%', 'time_left': '2155s', 'f1': 0.1904, 'bleu': 0.007393}
+10587s elapsed: {'exs': 6490, '%done': '83.19%', 'time_left': '2138s', 'f1': 0.1905, 'bleu': 0.007425}
+10601s elapsed: {'exs': 6500, '%done': '83.32%', 'time_left': '2122s', 'f1': 0.1907, 'bleu': 0.007474}
+10616s elapsed: {'exs': 6510, '%done': '83.45%', 'time_left': '2105s', 'f1': 0.1906, 'bleu': 0.007463}
+10631s elapsed: {'exs': 6520, '%done': '83.58%', 'time_left': '2088s', 'f1': 0.1906, 'bleu': 0.007451}
+10650s elapsed: {'exs': 6530, '%done': '83.71%', 'time_left': '2073s', 'f1': 0.1906, 'bleu': 0.00744}
+10667s elapsed: {'exs': 6540, '%done': '83.84%', 'time_left': '2056s', 'f1': 0.1906, 'bleu': 0.007428}
+10684s elapsed: {'exs': 6550, '%done': '83.96%', 'time_left': '2040s', 'f1': 0.1906, 'bleu': 0.007417}
+10699s elapsed: {'exs': 6560, '%done': '84.09%', 'time_left': '2024s', 'f1': 0.1906, 'bleu': 0.007406}
+10716s elapsed: {'exs': 6570, '%done': '84.22%', 'time_left': '2007s', 'f1': 0.1906, 'bleu': 0.007394}
+10730s elapsed: {'exs': 6580, '%done': '84.35%', 'time_left': '1991s', 'f1': 0.1907, 'bleu': 0.007383}
+10748s elapsed: {'exs': 6590, '%done': '84.48%', 'time_left': '1975s', 'f1': 0.1906, 'bleu': 0.007372}
+10765s elapsed: {'exs': 6600, '%done': '84.60%', 'time_left': '1959s', 'f1': 0.1907, 'bleu': 0.007361}
+10784s elapsed: {'exs': 6610, '%done': '84.73%', 'time_left': '1943s', 'f1': 0.1907, 'bleu': 0.00735}
+10800s elapsed: {'exs': 6620, '%done': '84.86%', 'time_left': '1926s', 'f1': 0.1908, 'bleu': 0.007339}
+10815s elapsed: {'exs': 6630, '%done': '84.99%', 'time_left': '1910s', 'f1': 0.1909, 'bleu': 0.007433}
+10833s elapsed: {'exs': 6640, '%done': '85.12%', 'time_left': '1894s', 'f1': 0.191, 'bleu': 0.007422}
+10853s elapsed: {'exs': 6650, '%done': '85.25%', 'time_left': '1878s', 'f1': 0.191, 'bleu': 0.007411}
+10868s elapsed: {'exs': 6660, '%done': '85.37%', 'time_left': '1862s', 'f1': 0.191, 'bleu': 0.0074}
+10883s elapsed: {'exs': 6670, '%done': '85.50%', 'time_left': '1845s', 'f1': 0.1911, 'bleu': 0.007449}
+10901s elapsed: {'exs': 6680, '%done': '85.63%', 'time_left': '1829s', 'f1': 0.191, 'bleu': 0.007438}
+10919s elapsed: {'exs': 6690, '%done': '85.76%', 'time_left': '1813s', 'f1': 0.1909, 'bleu': 0.007426}
+10936s elapsed: {'exs': 6700, '%done': '85.89%', 'time_left': '1797s', 'f1': 0.1908, 'bleu': 0.007415}
+10954s elapsed: {'exs': 6710, '%done': '86.01%', 'time_left': '1781s', 'f1': 0.1908, 'bleu': 0.007404}
+10972s elapsed: {'exs': 6720, '%done': '86.14%', 'time_left': '1764s', 'f1': 0.1908, 'bleu': 0.007393}
+10990s elapsed: {'exs': 6730, '%done': '86.27%', 'time_left': '1748s', 'f1': 0.1907, 'bleu': 0.007382}
+11009s elapsed: {'exs': 6740, '%done': '86.40%', 'time_left': '1733s', 'f1': 0.1907, 'bleu': 0.007371}
+11027s elapsed: {'exs': 6750, '%done': '86.53%', 'time_left': '1716s', 'f1': 0.1906, 'bleu': 0.007361}
+11045s elapsed: {'exs': 6760, '%done': '86.66%', 'time_left': '1700s', 'f1': 0.1905, 'bleu': 0.00735}
+11064s elapsed: {'exs': 6770, '%done': '86.78%', 'time_left': '1684s', 'f1': 0.1905, 'bleu': 0.007369}
+11080s elapsed: {'exs': 6780, '%done': '86.91%', 'time_left': '1668s', 'f1': 0.1904, 'bleu': 0.007358}
+11098s elapsed: {'exs': 6790, '%done': '87.04%', 'time_left': '1652s', 'f1': 0.1904, 'bleu': 0.007383}
+11114s elapsed: {'exs': 6800, '%done': '87.17%', 'time_left': '1636s', 'f1': 0.1904, 'bleu': 0.007372}
+11130s elapsed: {'exs': 6810, '%done': '87.30%', 'time_left': '1619s', 'f1': 0.1904, 'bleu': 0.007418}
+11149s elapsed: {'exs': 6820, '%done': '87.42%', 'time_left': '1603s', 'f1': 0.1905, 'bleu': 0.007407}
+11164s elapsed: {'exs': 6830, '%done': '87.55%', 'time_left': '1587s', 'f1': 0.1904, 'bleu': 0.007396}
+11181s elapsed: {'exs': 6840, '%done': '87.68%', 'time_left': '1570s', 'f1': 0.1905, 'bleu': 0.007413}
+11201s elapsed: {'exs': 6850, '%done': '87.81%', 'time_left': '1555s', 'f1': 0.1904, 'bleu': 0.007402}
+11219s elapsed: {'exs': 6860, '%done': '87.94%', 'time_left': '1538s', 'f1': 0.1905, 'bleu': 0.007391}
+11236s elapsed: {'exs': 6870, '%done': '88.07%', 'time_left': '1522s', 'f1': 0.1904, 'bleu': 0.00738}
+11255s elapsed: {'exs': 6880, '%done': '88.19%', 'time_left': '1506s', 'f1': 0.1903, 'bleu': 0.00737}
+11275s elapsed: {'exs': 6890, '%done': '88.32%', 'time_left': '1490s', 'f1': 0.1903, 'bleu': 0.007359}
+11295s elapsed: {'exs': 6900, '%done': '88.45%', 'time_left': '1475s', 'f1': 0.1903, 'bleu': 0.007348}
+11312s elapsed: {'exs': 6910, '%done': '88.58%', 'time_left': '1458s', 'f1': 0.1902, 'bleu': 0.007338}
+11330s elapsed: {'exs': 6920, '%done': '88.71%', 'time_left': '1442s', 'f1': 0.1902, 'bleu': 0.007327}
+11348s elapsed: {'exs': 6930, '%done': '88.83%', 'time_left': '1426s', 'f1': 0.1902, 'bleu': 0.007316}
+11366s elapsed: {'exs': 6940, '%done': '88.96%', 'time_left': '1410s', 'f1': 0.1902, 'bleu': 0.007306}
+11379s elapsed: {'exs': 6950, '%done': '89.09%', 'time_left': '1393s', 'f1': 0.1902, 'bleu': 0.007361}
+11394s elapsed: {'exs': 6960, '%done': '89.22%', 'time_left': '1376s', 'f1': 0.1901, 'bleu': 0.007351}
+11408s elapsed: {'exs': 6970, '%done': '89.35%', 'time_left': '1360s', 'f1': 0.1901, 'bleu': 0.00738}
+11424s elapsed: {'exs': 6980, '%done': '89.48%', 'time_left': '1343s', 'f1': 0.1901, 'bleu': 0.007369}
+11439s elapsed: {'exs': 6990, '%done': '89.60%', 'time_left': '1327s', 'f1': 0.19, 'bleu': 0.007359}
+11456s elapsed: {'exs': 7000, '%done': '89.73%', 'time_left': '1310s', 'f1': 0.1901, 'bleu': 0.007348}
+11472s elapsed: {'exs': 7010, '%done': '89.86%', 'time_left': '1294s', 'f1': 0.1901, 'bleu': 0.007338}
+11490s elapsed: {'exs': 7020, '%done': '89.99%', 'time_left': '1278s', 'f1': 0.1901, 'bleu': 0.007327}
+11505s elapsed: {'exs': 7030, '%done': '90.12%', 'time_left': '1261s', 'f1': 0.1902, 'bleu': 0.007317}
+11520s elapsed: {'exs': 7040, '%done': '90.24%', 'time_left': '1245s', 'f1': 0.1902, 'bleu': 0.007354}
+11536s elapsed: {'exs': 7050, '%done': '90.37%', 'time_left': '1228s', 'f1': 0.1901, 'bleu': 0.007344}
+11553s elapsed: {'exs': 7060, '%done': '90.50%', 'time_left': '1212s', 'f1': 0.1903, 'bleu': 0.007368}
+11569s elapsed: {'exs': 7070, '%done': '90.63%', 'time_left': '1196s', 'f1': 0.1904, 'bleu': 0.007358}
+11587s elapsed: {'exs': 7080, '%done': '90.76%', 'time_left': '1180s', 'f1': 0.1903, 'bleu': 0.007347}
+11604s elapsed: {'exs': 7090, '%done': '90.89%', 'time_left': '1163s', 'f1': 0.1903, 'bleu': 0.007337}
+11623s elapsed: {'exs': 7100, '%done': '91.01%', 'time_left': '1147s', 'f1': 0.1903, 'bleu': 0.007327}
+11636s elapsed: {'exs': 7110, '%done': '91.14%', 'time_left': '1130s', 'f1': 0.1903, 'bleu': 0.007316}
+11652s elapsed: {'exs': 7120, '%done': '91.27%', 'time_left': '1114s', 'f1': 0.1903, 'bleu': 0.007306}
+11671s elapsed: {'exs': 7130, '%done': '91.40%', 'time_left': '1098s', 'f1': 0.1903, 'bleu': 0.007296}
+11685s elapsed: {'exs': 7140, '%done': '91.53%', 'time_left': '1081s', 'f1': 0.1904, 'bleu': 0.007311}
+11704s elapsed: {'exs': 7150, '%done': '91.65%', 'time_left': '1065s', 'f1': 0.1904, 'bleu': 0.0073}
+11720s elapsed: {'exs': 7160, '%done': '91.78%', 'time_left': '1049s', 'f1': 0.1904, 'bleu': 0.007316}
+11737s elapsed: {'exs': 7170, '%done': '91.91%', 'time_left': '1032s', 'f1': 0.1903, 'bleu': 0.007305}
+11753s elapsed: {'exs': 7180, '%done': '92.04%', 'time_left': '1016s', 'f1': 0.1903, 'bleu': 0.007295}
+11770s elapsed: {'exs': 7190, '%done': '92.17%', 'time_left': '1000s', 'f1': 0.1902, 'bleu': 0.007285}
+TEXT:  <t1start> what is the name of your dog <t1end>
+PREDICTION:  my dog is named after my favorite character from the godfather . 
+~
+11786s elapsed: {'exs': 7200, '%done': '92.30%', 'time_left': '983s', 'f1': 0.1902, 'bleu': 0.007275}
+11804s elapsed: {'exs': 7210, '%done': '92.42%', 'time_left': '967s', 'f1': 0.1902, 'bleu': 0.007316}
+11820s elapsed: {'exs': 7220, '%done': '92.55%', 'time_left': '951s', 'f1': 0.1901, 'bleu': 0.007306}
+11837s elapsed: {'exs': 7230, '%done': '92.68%', 'time_left': '934s', 'f1': 0.1901, 'bleu': 0.007296}
+11853s elapsed: {'exs': 7240, '%done': '92.81%', 'time_left': '918s', 'f1': 0.1901, 'bleu': 0.007286}
+11868s elapsed: {'exs': 7250, '%done': '92.94%', 'time_left': '901s', 'f1': 0.1902, 'bleu': 0.007276}
+11883s elapsed: {'exs': 7260, '%done': '93.06%', 'time_left': '885s', 'f1': 0.1902, 'bleu': 0.007266}
+11900s elapsed: {'exs': 7270, '%done': '93.19%', 'time_left': '869s', 'f1': 0.1903, 'bleu': 0.007256}
+11919s elapsed: {'exs': 7280, '%done': '93.32%', 'time_left': '853s', 'f1': 0.1902, 'bleu': 0.007246}
+11935s elapsed: {'exs': 7290, '%done': '93.45%', 'time_left': '836s', 'f1': 0.1902, 'bleu': 0.007236}
+11952s elapsed: {'exs': 7300, '%done': '93.58%', 'time_left': '820s', 'f1': 0.1901, 'bleu': 0.007226}
+11971s elapsed: {'exs': 7310, '%done': '93.71%', 'time_left': '804s', 'f1': 0.19, 'bleu': 0.007216}
+11990s elapsed: {'exs': 7320, '%done': '93.83%', 'time_left': '787s', 'f1': 0.19, 'bleu': 0.007206}
+12003s elapsed: {'exs': 7330, '%done': '93.96%', 'time_left': '771s', 'f1': 0.1901, 'bleu': 0.007196}
+12017s elapsed: {'exs': 7340, '%done': '94.09%', 'time_left': '754s', 'f1': 0.1902, 'bleu': 0.007187}
+12033s elapsed: {'exs': 7350, '%done': '94.22%', 'time_left': '738s', 'f1': 0.1901, 'bleu': 0.007177}
+12049s elapsed: {'exs': 7360, '%done': '94.35%', 'time_left': '722s', 'f1': 0.1902, 'bleu': 0.007167}
+12066s elapsed: {'exs': 7370, '%done': '94.48%', 'time_left': '705s', 'f1': 0.1901, 'bleu': 0.007157}
+12083s elapsed: {'exs': 7380, '%done': '94.60%', 'time_left': '689s', 'f1': 0.1901, 'bleu': 0.007148}
+12098s elapsed: {'exs': 7390, '%done': '94.73%', 'time_left': '672s', 'f1': 0.1901, 'bleu': 0.007138}
+12116s elapsed: {'exs': 7400, '%done': '94.86%', 'time_left': '656s', 'f1': 0.1901, 'bleu': 0.007164}
+12133s elapsed: {'exs': 7410, '%done': '94.99%', 'time_left': '640s', 'f1': 0.1901, 'bleu': 0.007154}
+12152s elapsed: {'exs': 7420, '%done': '95.12%', 'time_left': '623s', 'f1': 0.1901, 'bleu': 0.007144}
+12168s elapsed: {'exs': 7430, '%done': '95.24%', 'time_left': '607s', 'f1': 0.19, 'bleu': 0.007135}
+12185s elapsed: {'exs': 7440, '%done': '95.37%', 'time_left': '591s', 'f1': 0.19, 'bleu': 0.007125}
+12202s elapsed: {'exs': 7450, '%done': '95.50%', 'time_left': '574s', 'f1': 0.1899, 'bleu': 0.007116}
+12220s elapsed: {'exs': 7460, '%done': '95.63%', 'time_left': '558s', 'f1': 0.19, 'bleu': 0.007106}
+12236s elapsed: {'exs': 7470, '%done': '95.76%', 'time_left': '542s', 'f1': 0.1901, 'bleu': 0.007097}
+12251s elapsed: {'exs': 7480, '%done': '95.89%', 'time_left': '525s', 'f1': 0.1901, 'bleu': 0.007122}
+12270s elapsed: {'exs': 7490, '%done': '96.01%', 'time_left': '509s', 'f1': 0.1902, 'bleu': 0.007113}
+12287s elapsed: {'exs': 7500, '%done': '96.14%', 'time_left': '493s', 'f1': 0.1902, 'bleu': 0.007142}
+12301s elapsed: {'exs': 7510, '%done': '96.27%', 'time_left': '476s', 'f1': 0.1903, 'bleu': 0.007132}
+12320s elapsed: {'exs': 7520, '%done': '96.40%', 'time_left': '460s', 'f1': 0.1903, 'bleu': 0.007123}
+12338s elapsed: {'exs': 7530, '%done': '96.53%', 'time_left': '444s', 'f1': 0.1905, 'bleu': 0.007142}
+12356s elapsed: {'exs': 7540, '%done': '96.65%', 'time_left': '427s', 'f1': 0.1905, 'bleu': 0.007132}
+12374s elapsed: {'exs': 7550, '%done': '96.78%', 'time_left': '411s', 'f1': 0.1904, 'bleu': 0.007123}
+12390s elapsed: {'exs': 7560, '%done': '96.91%', 'time_left': '394s', 'f1': 0.1904, 'bleu': 0.007113}
+12407s elapsed: {'exs': 7570, '%done': '97.04%', 'time_left': '378s', 'f1': 0.1904, 'bleu': 0.007104}
+12424s elapsed: {'exs': 7580, '%done': '97.17%', 'time_left': '362s', 'f1': 0.1904, 'bleu': 0.007095}
+12439s elapsed: {'exs': 7590, '%done': '97.30%', 'time_left': '345s', 'f1': 0.1904, 'bleu': 0.007085}
+12454s elapsed: {'exs': 7600, '%done': '97.42%', 'time_left': '329s', 'f1': 0.1904, 'bleu': 0.007076}
+12468s elapsed: {'exs': 7610, '%done': '97.55%', 'time_left': '312s', 'f1': 0.1904, 'bleu': 0.007131}
+12483s elapsed: {'exs': 7620, '%done': '97.68%', 'time_left': '296s', 'f1': 0.1904, 'bleu': 0.007122}
+12502s elapsed: {'exs': 7630, '%done': '97.81%', 'time_left': '280s', 'f1': 0.1903, 'bleu': 0.007112}
+12515s elapsed: {'exs': 7640, '%done': '97.94%', 'time_left': '263s', 'f1': 0.1905, 'bleu': 0.007103}
+12531s elapsed: {'exs': 7650, '%done': '98.06%', 'time_left': '247s', 'f1': 0.1904, 'bleu': 0.007094}
+12549s elapsed: {'exs': 7660, '%done': '98.19%', 'time_left': '231s', 'f1': 0.1904, 'bleu': 0.007084}
+12566s elapsed: {'exs': 7670, '%done': '98.32%', 'time_left': '214s', 'f1': 0.1904, 'bleu': 0.007075}
+12585s elapsed: {'exs': 7680, '%done': '98.45%', 'time_left': '198s', 'f1': 0.1904, 'bleu': 0.007066}
+12600s elapsed: {'exs': 7690, '%done': '98.58%', 'time_left': '181s', 'f1': 0.1904, 'bleu': 0.007084}
+12619s elapsed: {'exs': 7700, '%done': '98.71%', 'time_left': '165s', 'f1': 0.1903, 'bleu': 0.007075}
+12637s elapsed: {'exs': 7710, '%done': '98.83%', 'time_left': '149s', 'f1': 0.1904, 'bleu': 0.007091}
+12650s elapsed: {'exs': 7720, '%done': '98.96%', 'time_left': '132s', 'f1': 0.1904, 'bleu': 0.007082}
+12664s elapsed: {'exs': 7730, '%done': '99.09%', 'time_left': '116s', 'f1': 0.1904, 'bleu': 0.007073}
+12679s elapsed: {'exs': 7740, '%done': '99.22%', 'time_left': '99s', 'f1': 0.1904, 'bleu': 0.00709}
+12694s elapsed: {'exs': 7750, '%done': '99.35%', 'time_left': '83s', 'f1': 0.1903, 'bleu': 0.007081}
+12710s elapsed: {'exs': 7760, '%done': '99.47%', 'time_left': '67s', 'f1': 0.1902, 'bleu': 0.007072}
+12724s elapsed: {'exs': 7769, '%done': '99.59%', 'time_left': '52s', 'f1': 0.1902, 'bleu': 0.007063}
+12737s elapsed: {'exs': 7778, '%done': '99.71%', 'time_left': '37s', 'f1': 0.1902, 'bleu': 0.007091}
+12746s elapsed: {'exs': 7784, '%done': '99.78%', 'time_left': '27s', 'f1': 0.1902, 'bleu': 0.007085}
+12752s elapsed: {'exs': 7789, '%done': '99.85%', 'time_left': '19s', 'f1': 0.1901, 'bleu': 0.007081}
+12758s elapsed: {'exs': 7793, '%done': '99.90%', 'time_left': '13s', 'f1': 0.1902, 'bleu': 0.007137}
+12764s elapsed: {'exs': 7797, '%done': '99.95%', 'time_left': '6s', 'f1': 0.1902, 'bleu': 0.007134}
+12768s elapsed: {'exs': 7800, '%done': '99.99%', 'time_left': '1s', 'f1': 0.1901, 'bleu': 0.007131}
+EPOCH DONE
+finished evaluating task tasks.convai2transmitter.agents:SelfRevisedTeacher using datatype valid
+{'exs': 7801, 'f1': 0.1901, 'bleu': 0.00713}
+============================
+Revised BEAM: 2 PENALTY: No F1@1: 0.1901
+
+Process finished with exit code 0
