@@ -208,7 +208,7 @@ class SelfPlayWorld(DialogPartnerWorld):
 
             turn_size = agent_a_persona_reward.shape[1]
 
-            # TODO: discount gamma should be applied into all, not only in persona
+            # delayed reward
             discount_gamma = 0.5
 
             if discount_gamma > 0:

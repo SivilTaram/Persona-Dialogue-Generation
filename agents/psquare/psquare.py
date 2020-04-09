@@ -602,8 +602,7 @@ class PSquareAgent(Agent):
         else:
             # batch is in the training.
             act = self.batch_act(self.observation)
-            if 'DSquare' in act[0]['id'] and 'init' not in self.observation[0][
-                'id']:  # Only add dialogue text excluding the persona text
+            if 'DSquare' in act[0]['id'] and 'init' not in self.observation[0]['id']:  # Only add dialogue text excluding the persona text
                 if len(self.send_messages) == 0:  # At the beginning of an episode
                     if len(self.receive_messages) == 0:  # The first speaker receive no text before it first speaks
                         self.is_first_speaker = True
@@ -926,6 +925,13 @@ class PSquareAgent(Agent):
         """Generate the received dialog_all from the dialogue text"""
         send_messages = deepcopy(self.send_messages)
         receive_messages = deepcopy(self.receive_messages)
+
+        # remove the <end> from message for later robust splitting
+        receive_messages = [[message.replace(self.dict.end_token, '') for message in interaction]
+                            for interaction in receive_messages]
+        send_messages = [[message.replace(self.dict.end_token, '') for message in interaction]
+                         for interaction in send_messages]
+
         is_first_speaker = self.is_first_speaker
 
         with torch.no_grad():
@@ -1018,6 +1024,9 @@ class PSquareAgent(Agent):
         :return:
         """
         send_messages = deepcopy(self.send_messages)
+        send_messages = [[message.replace(self.dict.end_token, '') for message in interaction]
+                         for interaction in send_messages]
+
         batch_messages = ['' for _ in range(len(send_messages[0]))]
         for send_message in send_messages:
             # for every message

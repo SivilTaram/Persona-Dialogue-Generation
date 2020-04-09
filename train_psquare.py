@@ -86,7 +86,7 @@ def setup_args():
         init_model_coherent='./tmp/transmitter/{}.model'.format(transmitter_basic),
         # validation configuration
         validation_max_exs=validation_max,  # -1
-        validation_every_n_secs=36000,  # 90
+        validation_every_n_secs=3600,  # 90
         train_display_every_n_secs=train_display,
         validation_metric='f1',
         validation_metric_mode='max',
