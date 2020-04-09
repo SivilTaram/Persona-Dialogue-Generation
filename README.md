@@ -55,9 +55,7 @@ source $ENV_FOLDER/bin/activate (Linux)
 
 ### Install PyTorch
 
-The only requirement of our code base is as following:
-
-- pytorch >= 1.0.1
+The most important requirement of our code base is as `pytorch >= 1.0.1`. You should install it at first.
 
 
 ### Install Custom Dependencies
@@ -80,7 +78,9 @@ We provide three files to train `Transmitter`, `Receiver` and `PSquare` (details
 
 ### Training Transmitter
 
-The transmitter is based OpenAI's GPT model. We provide the default hyper-parameter for our paper experiments. Therefore, you could use the following command to train a transmitter. The script will automatically download the ConvAI2 dataset into the `./data/` folder. 
+![transmitter_model](misc/transmitter_model.svg)
+
+The transmitter is based OpenAI's GPT model. The default hyper-parameters are expected to reproduce our paper results (if not, please open an issue or concat me via email). Therefore, you could use the following command to train a transmitter. The script will automatically download the ConvAI2 dataset into the `./data/` folder. 
 
 ```python
 python train_transmitter.py
@@ -95,7 +95,10 @@ cd tasks/convai2receiver
 python build_data.py
 ```
 
-Then you could train the Receiver model as:
+![receiver_model](misc/receiver_model.svg)
+
+
+The backbone of our Receiver is BERT. And it is trained via a weak-supervision fashion. You could train the Receiver model as:
 
 ```python
 python train_receiver.py
@@ -116,6 +119,16 @@ We also provide trained PSquare weights for reproducing our experimental results
 - Trained model weights under the Original setting: https://www.dropbox.com/s/ozw9xmfv4f0tud9/psqaure_original.zip?dl=0
 - Trained model weights under the Revised setting: https://www.dropbox.com/s/bbvamaj9r019wsw/psqaure_revised.zip?dl=0
 
+Please create a directory `./tmp/psquare`, and unzip the model zipped files into the directory as:
+
+```bash
+| -- tmp
+    | -- psquare
+        | -- psqaure_original.model
+        | -- psqaure_original.model.opt
+        | -- psqaure_original.model.best_valid
+``` 
+
 ## Evaluation
 
 You could run `eval_f1.py`, `eval_hits.py` to obtain the `F1`, `Hits@1` for either Transmitter or PSquare. The evaluation logs on our provided model weights can be found in the folder `./logs/`.
@@ -125,6 +138,10 @@ As for the `ppl` metric, you could run the training script on a trained model fi
 ## Acknowledgement
 
 The `parlai` module is modified from [ParlAI](https://github.com/facebookresearch/ParlAI). Thanks them for their huge contributions on developing such a great conversational platform! Also many thanks for Huggingface's transformer library!
+
+## Concat
+
+You could reach me via my email: qian dot liu at buaa dot edu dot cn. Or just feel free to open an issue :)
 
 ## Citation
 
