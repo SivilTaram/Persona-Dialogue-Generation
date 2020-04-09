@@ -1,5 +1,36 @@
-# Learn to Make First Contact
-Modelling chit-chat between two newly met persons.
+# ACL2020-Persona-Dialogue-Generation
+
+This is the official code for our ACL 2020 paper [You Impress Me: Dialogue Generation via Mutual Persona Perception]().
+
+## Task & Experiments
+
+![dialogue_example](misc/example_dialogue.svg)
+
+Our target task is **Open-domain Personalized Dialogue Generation**. As shown above, two interlocutors meet for the first time and are having a conversation in order to get to know each other. The model is aware of their persona, which are explicitly described using several profile sentences, facilitating the training of chatbots with configurable and persistent personalities.
+
+We conduct experiments on [PersonaChat](http://convai.io/). And the main results on the validation dataset are as following (partial results of baselines are borrowed from [here](https://raw.githubusercontent.com/DeepPavlov/convai/master/leaderboards.md)):
+
+| Setting   | Model  | PPL           | Hits@1  |   F1   |
+| -------------       | ---      | :------------- | :-----  |  :----- |
+|                     | Ours               | **15.12**&#x1F34E;   | 81.9   | **19.77**&#x1F34E; |
+|                     | Transfertransfo    |  17.51 | **82.1**&#x1F34E;  |  19.09 |
+|                     | Lost In Conversation  | -   | 17.3  | 17.79  |
+|                     | Seq2seq-Attention | 35.07  	 | 12.5      | 16.82 |
+|     Original        | Language Model     | 50.67       | - | 16.30 |
+|                     | Generative Profile Memory     | 35.01   | 10.2   | 16.29	|
+|                     | Dually Interactive Matching | - | 78.8 | - |
+|                     | KV Profile Memory  | -	 |  54.8   | 14.25	| 
+
+*Details about each baseline are shown in our paper.*
+
+## Model Quick Overview
+
+![model_framework](misc/model_framework.svg)
+
+In this paper, we propose a a transmitter-receiver based framework with the aim of explicitly modelling **Persona understanding**, in other words, **Mutual Persona Perception**. 
+
+It is based on the following motivation: the two interlocutors foster understanding either by raising persona-related topics, `Seen any good movies lately?`, or by revealing their own personas through answering questions, `I don't watch movies more of a writer.`. The efforts to build understanding keep the conversation flowing. 
+
 
 ## Install Dependencies
 
@@ -93,7 +124,7 @@ As for the `ppl` metric, you could run the training script on a trained model fi
 
 ## Acknowledgement
 
-The `parlai` module is modified from [ParlAI](https://github.com/facebookresearch/ParlAI). Thanks them for their huge contributions on developing such a great conversational platform!
+The `parlai` module is modified from [ParlAI](https://github.com/facebookresearch/ParlAI). Thanks them for their huge contributions on developing such a great conversational platform! Also many thanks for Huggingface's transformer library!
 
 ## Citation
 
