@@ -65,7 +65,7 @@ def convert(personae, output_path):
 def _path(opt):
     # Build the data if it doesn't exist.
     build(opt)
-    return os.path.join(opt['datapath'], 'ConvAI2')
+    return os.path.join('data', 'ConvAI2')
 
 
 def _build_dict(opt):
@@ -90,9 +90,9 @@ def build_data(data_file):
 
 
 if __name__ == '__main__':
-    build_data("..\\..\\data\\ConvAI2\\train_both_original.txt")
-    build_data("..\\..\\data\\ConvAI2\\valid_both_original.txt")
-    build_data("..\\..\\data\\ConvAI2\\train_both_revised.txt")
-    build_data("..\\..\\data\\ConvAI2\\valid_both_revised.txt")
+    build_data("data\\ConvAI2\\train_both_original.txt")
+    build_data("data\\ConvAI2\\valid_both_original.txt")
+    build_data("data\\ConvAI2\\train_both_revised.txt")
+    build_data("data\\ConvAI2\\valid_both_revised.txt")
 
 

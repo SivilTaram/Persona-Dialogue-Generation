@@ -55,14 +55,15 @@ source $ENV_FOLDER/bin/activate (Linux)
 
 ### Install PyTorch
 
-The most important requirement of our code base is as `pytorch >= 1.0.1`. You should install it at first.
+The most important requirements of our code base are `pytorch >= 1.0.1` and `tensorboardX`. You should install them at first.
 
 
 ### Install Custom Dependencies
 
-Besides pytorch, our code is mainly based on [ParlAI](https://github.com/facebookresearch/ParlAI) and [Huggingface's transformers](https://github.com/huggingface/transformers) (pytorch-pretrained-bert v0.6.2) library. As they are under active development, for the purpose to reproduce our results, we provide two custom repos to install them. It is worth noting that we also modify a little on Huggingface's code to achieve the auxiliary task `Next Utterance Prediction` (See Section 3.1 in our paper), and more details on changes could be seen [here](https://github.com/SivilTaram/transformers/commit/e1e718496c32c0d99291c0b890fd4ae6365191ba). 
+Besides pytorch, our code is mainly based on [ParlAI](https://github.com/facebookresearch/ParlAI) and [Huggingface's transformers](https://github.com/huggingface/transformers) (pytorch-pretrained-bert v0.6.2) library. As they are under active development, for the purpose to reproduce our results, we provide two custom repos to install them. It is worth noting that we also modify a little on Huggingface's code to achieve the auxiliary task `Next Utterance Prediction` (See Section 3.1 in our paper), and more details on changes could be seen [here](https://github.com/SivilTaram/transformers/commit/e1e718496c32c0d99291c0b890fd4ae6365191ba). Assuming you current working directory is `./`, you can run the following script to install them:
 
 ```bash
+cd ..
 git clone https://github.com/SivilTaram/transformers.git
 cd transformers
 python setup.py install
@@ -70,6 +71,8 @@ cd ..
 git clone https://github.com/SivilTaram/ParlAI.git
 cd ParlAI
 python setup.py install
+cd ..
+cd ACL2020-Persona-Dialogue-Generation
 ```
 
 ## Training
@@ -91,8 +94,7 @@ python train_transmitter.py
 If you have downloaded the ConvAI2 dataset, you could use `./tasks/convai2receiver/build_data.py` to build the dataset for receiver:
 
 ```python
-cd tasks/convai2receiver
-python build_data.py
+python tasks/convai2receiver/build_data.py
 ```
 
 ![receiver_model](misc/receiver_model.svg)
