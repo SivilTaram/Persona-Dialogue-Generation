@@ -114,6 +114,13 @@ Before training PSquare, you should have a trained transmitter and receiver. Spe
 python train_psquare.py
 ```
 
+Note that we use two cards to train our PSquare bot to speed up. If you do not have two or more GPU cards, you could comment lines 444-445 in `agents/psquare/psquare.py`.
+
+```python
+self.coherent_model.cuda("cuda:1")
+self.language_model.cuda('cuda:1')
+```
+
 ## Trained Model Weights
 
 We also provide trained PSquare weights for reproducing our experimental results in the paper.
