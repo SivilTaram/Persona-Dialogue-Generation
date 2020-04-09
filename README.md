@@ -129,15 +129,17 @@ Please create a directory `./tmp/psquare`, and unzip the model zipped files into
         | -- psqaure_original.model.best_valid
 ``` 
 
+Then you could directly evaluate it using the following evaluation scripts.
+
 ## Evaluation
 
 You could run `eval_f1.py`, `eval_hits.py` to obtain the `F1`, `Hits@1` for either Transmitter or PSquare. The evaluation logs on our provided model weights can be found in the folder `./logs/`.
 
-As for the `ppl` metric, you could run the training script on a trained model file to fake the continuation of training. The restoring will first validate on the valid dataset.
+As for the `ppl` metric, you could run the training script on a trained model file to fake the continuation of training. The restoring will first validate and report `ppl` on the validation dataset.
 
 ## Acknowledgement
 
-The `parlai` module is modified from [ParlAI](https://github.com/facebookresearch/ParlAI). Thanks them for their huge contributions on developing such a great conversational platform! Also many thanks for Huggingface's transformer library!
+The `parlai` module is modified from [ParlAI](https://github.com/facebookresearch/ParlAI). Thanks them for their huge contributions on developing such a great conversational platform (*Attention: usage on this module follows its open source License*) ! Also many thanks for Huggingface's transformer library!
 
 ## Concat
 
