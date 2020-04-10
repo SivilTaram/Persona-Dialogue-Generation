@@ -72,7 +72,7 @@ git clone https://github.com/SivilTaram/ParlAI.git
 cd ParlAI
 python setup.py install
 cd ..
-cd ACL2020-Persona-Dialogue-Generation
+cd Persona-Dialogue-Generation
 ```
 
 ## Training
