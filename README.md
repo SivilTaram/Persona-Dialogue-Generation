@@ -1,6 +1,6 @@
 # Persona-Dialogue-Generation
 
-This is the official code for our ACL 2020 paper [You Impress Me: Dialogue Generation via Mutual Persona Perception]().
+This is the official code for our ACL 2020 paper [You Impress Me: Dialogue Generation via Mutual Persona Perception](https://arxiv.org/pdf/2004.05388.pdf).
 
 ## Task & Experiments
 
