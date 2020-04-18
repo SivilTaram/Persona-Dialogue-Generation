@@ -1,5 +1,8 @@
 # Persona-Dialogue-Generation
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/you-impress-me-dialogue-generation-via-mutual/dialogue-generation-on-persona-chat)](https://paperswithcode.com/sota/dialogue-generation-on-persona-chat?p=you-impress-me-dialogue-generation-via-mutual)
+
+
 This is the official code for our ACL 2020 paper [You Impress Me: Dialogue Generation via Mutual Persona Perception](https://arxiv.org/pdf/2004.05388.pdf).
 
 ## Task & Experiments
