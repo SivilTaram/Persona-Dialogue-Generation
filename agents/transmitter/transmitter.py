@@ -803,7 +803,7 @@ class TransformerAgent(Agent):
         sampling_cands = []
         valid_cands = []
         for i, v in enumerate(valid_inds):
-            if 'label_candidates' in observations[v]:
+            if 'label_candidates' in observations[v] and observations[v]['label_candidates']:
                 curr_lcs = list(observations[v]['label_candidates'])
                 curr_cands = [{'text': c + ' ' + self.dict.end_token} for c in curr_lcs]
                 # padding candidates
@@ -817,17 +817,18 @@ class TransformerAgent(Agent):
                 cands.append(cs)
                 # random select one from 0:18 from curr_lcs
                 sampling_cands.append(random.choice(curr_lcs[:19]) + ' ' + self.dict.end_token)
-        # construct one tensor
-        sample_can_sep = ' {} '.format(self.dict.start_token).join(sampling_cands)
-        # the sample should appended a END symbol as well.
-        sample_out = PaddingUtils.pad_text([{'text': sample_can_sep, 'eval_labels': [sample_can_sep]}],
-                                           self.dict, null_idx=self.NULL_IDX, dq=False)
-        # remove the last which is extra END IDX
-        sample_ys = sample_out[1]
-        sampling_cands = split_pad_vector(sample_ys, self.START_IDX, self.NULL_IDX)[0]
-        sampling_cands = torch.LongTensor(sampling_cands)
-        if self.use_cuda:
-            sampling_cands = sampling_cands.cuda()
+        if is_training:
+            # construct one tensor
+            sample_can_sep = ' {} '.format(self.dict.start_token).join(sampling_cands)
+            # the sample should appended a END symbol as well.
+            sample_out = PaddingUtils.pad_text([{'text': sample_can_sep, 'eval_labels': [sample_can_sep]}],
+                                               self.dict, null_idx=self.NULL_IDX, dq=False)
+            # remove the last which is extra END IDX
+            sample_ys = sample_out[1]
+            sampling_cands = split_pad_vector(sample_ys, self.START_IDX, self.NULL_IDX)[0]
+            sampling_cands = torch.LongTensor(sampling_cands)
+            if self.use_cuda:
+                sampling_cands = sampling_cands.cuda()
 
         return src_seq, src_seq_turn, src_seq_dis, tgt_seq, tgt_seq_turn, labels, valid_inds, cands, valid_cands, sampling_cands, is_training
 

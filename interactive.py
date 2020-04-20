@@ -24,10 +24,8 @@ from parlai.agents.local_human.local_human import LocalHumanAgent
 
 import random
 import os
-model_version = 'psquare'
-model_name = ''
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '3,4'
+pretrained_model_file = './tmp/psquare/psqaure_original.model'
 
 
 def setup_args(parser=None):
@@ -47,7 +45,7 @@ def setup_args(parser=None):
         default='label_candidates,text_candidates',
         help='Do not display these fields',
     )
-    parser.set_defaults(model_file='./tmp/{}/{}.model'.format(model_version, model_name))
+    parser.set_defaults(model_file=pretrained_model_file)
     LocalHumanAgent.add_cmdline_args(parser)
     return parser
 
@@ -137,6 +135,7 @@ if __name__ == '__main__':
         dict_lower=True,
         batchsize=1,
         rank_candidates=False,
-        init_model_transmitter="./tmp/psquare/{}.model".format(model_name)
+        model='agents.transmitter.transmitter:TransformerAgent',
+        init_model_transmitter=pretrained_model_file
     )
     interactive(parser.parse_args(print_args=False), print_parser=parser)
