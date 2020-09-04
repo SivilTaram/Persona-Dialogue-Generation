@@ -70,7 +70,7 @@ def setup_args():
     select_persona = False
     shuffle_persona = True
     share_decoder_input_output_embed = False
-    num_epochs = 4
+    num_train_epochs = 4
 
     if ARCH_CHOICE == 'gpt':
         batchsize, lr, optimizer, gradient_clip = gpt_setting()
@@ -88,7 +88,7 @@ def setup_args():
         datatype='train',
         gpt_lr=6.25e-5,
         n_epoches=n_epoches,
-        num_train_epochs=num_train_epochs,
+        num_epochs=num_train_epochs,
         batchsize=batchsize,
         beam_size=beam_size,
         encoder_layers=encode_layers,
