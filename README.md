@@ -120,6 +120,8 @@ If you have downloaded the ConvAI2 dataset, you could use `./tasks/convai2receiv
 python tasks/convai2receiver/build_data.py
 ```
 
+> You may receive the hint `Tried to build dictionary but --dict-file is not set. Set this param so the dictionary can be saved.` after running the above script. But don't worry about it since it is an expected warnning.
+
 ![receiver_model](misc/receiver_model.svg)
 
 
