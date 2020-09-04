@@ -89,7 +89,7 @@ We provide three files to train `Transmitter`, `Receiver` and `PSquare` (details
 
 ![transmitter_model](misc/transmitter_model.svg)
 
-The transmitter is based OpenAI's GPT model. The default hyper-parameters are expected to reproduce our paper results (if not, please open an issue or concat me via email). Therefore, you could use the following command to train a transmitter. The script will automatically download the PersonaChat dataset into the `./data/ConvAI2` folder. Note that we use the `train_self_(original|revised).txt` to train Transmitter.
+The transmitter is based OpenAI's GPT model. The default hyper-parameters are expected to reproduce our paper results (if not, please open an issue or contact me via email). Therefore, you could use the following command to train a transmitter. The script will automatically download the PersonaChat dataset into the `./data/ConvAI2` folder. Note that we use the `train_self_(original|revised).txt` to train Transmitter.
 
 ```python
 python train_transmitter.py
@@ -183,7 +183,7 @@ We will first thank for the [PersonaChat](https://arxiv.org/pdf/1801.07243.pdf) 
 
 The `parlai` module is modified from [ParlAI](https://github.com/facebookresearch/ParlAI). Thanks them for their huge contributions on developing such a great conversational platform (*Attention: usage on this module follows its open source License*) ! Also many thanks for Huggingface's transformer library! 
 
-## Concat
+## Contact
 
 You could reach me via my email: qian dot liu at buaa dot edu dot cn. Or just feel free to open an issue :)
 
