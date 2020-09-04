@@ -50,7 +50,6 @@ def setup_args():
     """
     parser = setup_dict_args()
     exp_name = VERSION
-    n_epoches = 100
     beam_size = 2
     encode_layers = 2
     decode_layers = 2
@@ -71,7 +70,7 @@ def setup_args():
     select_persona = False
     shuffle_persona = True
     share_decoder_input_output_embed = False
-    num_train_epochs = 4
+    num_epochs = 4
 
     if ARCH_CHOICE == 'gpt':
         batchsize, lr, optimizer, gradient_clip = gpt_setting()
