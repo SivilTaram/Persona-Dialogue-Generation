@@ -89,7 +89,7 @@ def setup_args():
         datatype='train',
         gpt_lr=6.25e-5,
         n_epoches=n_epoches,
-        num_train_epochs=num_train_epochs,
+        num_epochs=num_train_epochs,
         batchsize=batchsize,
         beam_size=beam_size,
         encoder_layers=encode_layers,
