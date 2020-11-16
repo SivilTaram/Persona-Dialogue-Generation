@@ -1069,16 +1069,14 @@ class PSquareAgent(Agent):
                     return states, opt_pickle
         return states
 
-    def save(self, path=None, component=None):
+    def save(self, path=None):
         """Save model parameters if model_file is set.
-        :param component, str in ['transmitter', 'receiver']
         """
-        path = self.opt.get('model_file_{}'.format(component), None) if path is None else path
+        path = self.opt.get('model_file', None) if path is None else path
 
-        assert isinstance(component, str), 'component should be either `transmitter` or `receiver`'
-        if path and hasattr(self, component):
-            optimizer = getattr(self, component + '_optimizer', None)
-            component = getattr(self, component)
+        if path:
+            optimizer = getattr(self, 'transmitter_optimizer', None)
+            component = getattr(self, 'transmitter')
             model = {'model': component.state_dict(), 'longest_label': component.longest_label,
                      'optimizer': optimizer.state_dict() if optimizer is not None else None,
                      'optimizer_type': self.opt['optimizer_transmitter'], 'opt': self.opt}
@@ -1090,7 +1088,9 @@ class PSquareAgent(Agent):
             with open(path + ".opt", 'wb') as handle:
                 pickle.dump(self.opt, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
-        print('Save model at {}!'.format(path))
+            print('Save model at {}!'.format(path))
+        else:
+            print('Please specify a valid save path in `model_file` keyword.')
 
 
 class mydefaultdict(defaultdict):

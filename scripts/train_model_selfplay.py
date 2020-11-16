@@ -202,11 +202,12 @@ class TrainLoop():
                     if self.best_valid is not None else ''))
             self.best_valid = new_valid
             self.impatience = 0
-            if opt.get('model_file_transmitter'):
-                print("[ saving best valid model: " + opt['model_file_transmitter'] + " ]")
-                self.agent.save(component='transmitter')
-                print("[ saving best valid metric: " + opt['model_file_transmitter'] + ".best_valid ]")
-                save_best_valid(opt['model_file_transmitter'], self.best_valid)
+            if opt.get('model_file'):
+                print("[ saving best valid model: " + opt['model_file'] + " ]")
+                # the fine-tuned transmitter part is actually what we want for PSquare bot
+                self.agent.save()
+                print("[ saving best valid metric: " + opt['model_file'] + ".best_valid ]")
+                save_best_valid(opt['model_file'], self.best_valid)
                 self.saved = True
 
             if opt['validation_metric'] == 'accuracy' and self.best_valid >= opt['validation_cutoff']:

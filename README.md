@@ -61,7 +61,7 @@ source $ENV_FOLDER/bin/activate (Linux)
 
 ### Install PyTorch
 
-The most important requirements of our code base are `pytorch >= 1.0.1` and `tensorboardX`. You should install them at first.
+The most important requirements of our code base are `pytorch == 1.0.1` and `tensorboardX`. You should install them at first.
 
 
 ### Install Custom Dependencies
