@@ -12,7 +12,7 @@ from scripts.train_model_selfplay import setup_args as setup_args_dict, TrainLoo
 
 # TODO: must at least two GPU as the receiver & transmitter cannot be run in the same GPU card
 #  within less than 24GB memory.
-os.environ['CUDA_VISIBLE_DEVICES'] = '1,2'
+os.environ['CUDA_VISIBLE_DEVICES'] = '0,1'
 
 IS_ORIGINAL = False
 
@@ -83,7 +83,7 @@ def setup_args():
         init_model_coherent='./tmp/transmitter/{}.model'.format(transmitter_basic),
         # validation configuration
         validation_max_exs=validation_max,  # -1
-        validation_every_n_secs=90,  # 90
+        validation_every_n_secs=3600,  # 90
         train_display_every_n_secs=train_display,
         validation_metric='f1',
         validation_metric_mode='max',
