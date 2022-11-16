@@ -70,8 +70,8 @@ Besides pytorch, our code is mainly based on [ParlAI](https://github.com/faceboo
 
 ```bash
 cd ..
-git clone https://github.com/SivilTaram/transformers.git
-cd transformers
+git clone https://github.com/SivilTaram/pytorch_pretrained_bert.git
+cd pytorch_pretrained_bert
 python setup.py install
 cd ..
 git clone https://github.com/SivilTaram/ParlAI.git
